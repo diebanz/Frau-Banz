@@ -1,0 +1,28 @@
+.header {
+    grid-column: full-start / full-end;
+    padding: 2rem;
+    background-image: url(../img/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns:minmax(25rem, 35%) 1fr;
+    grid-template-rows: auto;
+
+
+    &__backgroud {
+        grid-column: 1;
+        background-color: rgba($color: $color-primary-dark, $alpha: .46) ;
+        border: $color-primary 1px solid;
+        
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+.logo {
+    grid-column: 1;
+    width: 12rem;
+   
+}

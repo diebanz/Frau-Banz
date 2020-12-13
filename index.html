@@ -16,41 +16,55 @@
             <header class="header">
                 <div class="header__background">
                     
-                    <img src="/img/logo.png" alt="logo" class="header__logo"
-                    id="header__logo">                      
+                    <div class="header__content">
+                        
+                        <img src="/img/logo.png" alt="logo" class="header__content--logo"
+                        id="header__logo">
                     
+                        
+                        <h1 class="header__content--heading heading-1">
+                            Let's<span class="txt-type header__span--js" data-wait="2000"  data-words='[" talk about it", "picture it", "code it", "ENJOY IT"]'></span>
+                        </h1>
+                    </div>
+
                     <div class="breaking-line header__line"></div>
 
                     <nav class="header__nav">
                         <ul>
                             <li class="header__nav--items">
-                                <a class="header__nav--link">
+                                <a class="header__nav--link current">
                                     <ion-icon class="header__nav--icon" name="home"></ion-icon>
-                                    <span>Home</span>
-                                </a>
+                                    Home
+                                </a>    
                             </li>
                             <li class="header__nav--items">
                                 <a href="#" class="header__nav--link">
                                     <ion-icon class="header__nav--icon" name="person-circle"></ion-icon>
-                                    <span>about me</span>
+                                    about me
                                 </a>
                             </li>
                             <li class="header__nav--items">
                                 <a href="#" class="header__nav--link">
                                     <ion-icon class="header__nav--icon" name="school"></ion-icon>
-                                    <span>Curriculum Vitae</span>
+                                    Curriculum Vitae
+                                </a>
+                            </li>
+                            <li class="header__nav--items">
+                                <a href="#" class="header__nav--link">
+                                    <ion-icon class="header__nav--icon"  name="bulb"></ion-icon>
+                                    My Projects
                                 </a>
                             </li>
                             <li class="header__nav--items">
                                 <a href="#" class="header__nav--link">
                                     <ion-icon class="header__nav--icon" name="book"></ion-icon>
-                                    <span>Blog</span>
+                                    Blog
                                 </a>
                             </li>
                             <li class="header__nav--items">
                                 <a href="#" class="header__nav--link">
                                     <ion-icon class="header__nav--icon" name="mail"></ion-icon>
-                                    <span>contact</span>
+                                    contact
                                 </a>
                             </li>
                         </ul>
@@ -60,13 +74,15 @@
 
                     <div class="header__info">
                         <img src="img/user.jpg" alt="user picture" class="header__info--user">
-                        <h4 class="header__info--name">Natalia Banz - Aps on the Mission</h4>
-                        <p class="header__info--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt error, ipsa inventore non necessitatibus illo, a ex atque eligendi corrupti vero fugiat! Laudantium ex tenetur deleniti consequuntur a blanditiis dolorum?
+                        <h4 class="heading-4"><span class="header__span">Natalia Banz</span> <br>- Aps on the Mission -</h4>
+                        <p class="header__info--text">
+                            Hello! My name is Natalia and this is my personal website.
                         </p>
                     </div>
                 </>
             </header>
         </div>
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>   
+        <script src="js/typewriter.js"></script>   
     </body>
 </html>

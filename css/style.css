@@ -8,7 +8,7 @@ body {
   padding: 2rem; }
 
 ::selection {
-  background-color: #90caf9;
+  background-color: #8dcaff;
   color: #fff; }
 
 html {
@@ -27,6 +27,16 @@ body {
   line-height: 1.7;
   color: #333; }
 
+.breaking-line {
+  height: 2px;
+  width: 52rem;
+  background-color: rgba(195, 253, 255, 0.5);
+  display: block;
+  margin-bottom: 1rem; }
+
+.btn {
+  padding: 1rem 10rem; }
+
 .header {
   grid-column: full-start / full-end;
   padding: 2rem;
@@ -34,16 +44,66 @@ body {
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-columns: minmax(25rem, 35%) 1fr;
-  grid-template-rows: auto; }
-  .header__backgroud {
+  grid-template-columns: minmax(25rem, 35%) 1fr; }
+  .header__background {
     grid-column: 1;
-    background-color: rgba(93, 153, 198, 0.46);
-    border: #90caf9 1px solid;
+    padding: 1rem;
+    background-color: rgba(195, 253, 255, 0.5);
+    border: #fff 1px solid;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     display: grid;
+    grid-template-rows: 10rem repeat(4, min-content);
+    grid-template-columns: 5rem minmax(25rem, 1fr) 5rem;
+    grid-row-gap: 2rem;
     justify-items: center;
     align-items: center; }
-
-.logo {
-  grid-column: 1;
-  width: 12rem; }
+  .header__logo {
+    display: grid;
+    grid-column: 2;
+    width: 10rem; }
+  .header__nav {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3; }
+    .header__nav--items {
+      width: 40rem;
+      padding: .5rem;
+      list-style: none;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: .5rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin-bottom: .7rem;
+      border-radius: 5px;
+      box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2); }
+    .header__nav--link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #d81b60;
+      font-size: 3rem;
+      font-weight: 700; }
+      .header__nav--link:hover {
+        cursor: pointer;
+        background-color: rgba(195, 253, 255, 0.4);
+        border-radius: 5px; }
+    .header__nav--icon {
+      margin-right: 2rem;
+      color: #2d4a61; }
+  .header__info {
+    display: grid;
+    grid-column: 2;
+    grid-row: 5; }
+    .header__info--user {
+      width: 15rem;
+      border-radius: 100px; }
+  .header__line {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2; }
+    .header__line--2 {
+      display: grid;
+      grid-row: 4;
+      grid-column: 2; }

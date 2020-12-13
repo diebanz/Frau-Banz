@@ -14,27 +14,59 @@
     <body>
         <div class="container">
             <header class="header">
-                <div class="header__backgroud">
-                    <img src="/img/logo.png" alt="logo" class="logo" id="logo">
+                <div class="header__background">
+                    
+                    <img src="/img/logo.png" alt="logo" class="header__logo"
+                    id="header__logo">                      
+                    
+                    <div class="breaking-line header__line"></div>
+
+                    <nav class="header__nav">
+                        <ul>
+                            <li class="header__nav--items">
+                                <a class="header__nav--link">
+                                    <ion-icon class="header__nav--icon" name="home"></ion-icon>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--items">
+                                <a href="#" class="header__nav--link">
+                                    <ion-icon class="header__nav--icon" name="person-circle"></ion-icon>
+                                    <span>about me</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--items">
+                                <a href="#" class="header__nav--link">
+                                    <ion-icon class="header__nav--icon" name="school"></ion-icon>
+                                    <span>Curriculum Vitae</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--items">
+                                <a href="#" class="header__nav--link">
+                                    <ion-icon class="header__nav--icon" name="book"></ion-icon>
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--items">
+                                <a href="#" class="header__nav--link">
+                                    <ion-icon class="header__nav--icon" name="mail"></ion-icon>
+                                    <span>contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> 
         
-                    <nav>
-                       <ul class="header__nav">
-                           <li class="header__nav--items">home</li>
-                           <li class="header__nav--items">about me</li>
-                           <li class="header__nav--items">my cv</li>
-                           <li class="header__nav--items">blog</li>
-                           <li class="header__nav--items">contact</li>
-                       </ul>
-                    </nav>
-        
+                    <div class="breaking-line header__line--2"></div>
+
                     <div class="header__info">
                         <img src="img/user.jpg" alt="user picture" class="header__info--user">
                         <h4 class="header__info--name">Natalia Banz - Aps on the Mission</h4>
                         <p class="header__info--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt error, ipsa inventore non necessitatibus illo, a ex atque eligendi corrupti vero fugiat! Laudantium ex tenetur deleniti consequuntur a blanditiis dolorum?
                         </p>
                     </div>
-                </div>
+                </>
             </header>
         </div>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>   
     </body>
 </html>

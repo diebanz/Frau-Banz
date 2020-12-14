@@ -1,8 +1,8 @@
 .about {
     grid-column: full-start / full-end;
-    margin: 10rem 0;
+    margin: 5rem 0;
     padding: 1rem;
-    height: 85vh;
+    height: 95vh;
 
     display: grid;
     grid-template-columns: repeat(2, minmax(25rem, 1fr));
@@ -24,8 +24,13 @@
         padding: 10rem 15rem;
         background-color: $color-grey-light-2;
 
+        &--heading {
+            margin-bottom: 8rem;
+        }
+
         &--text {
             text-indent: 3rem;
+            margin: 1rem 0;
         }
     }
 }

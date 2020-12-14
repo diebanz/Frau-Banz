@@ -1,0 +1,23 @@
+.about {
+    grid-column: full-start / full-end;
+    margin: 15rem 0;
+    padding: 5rem;
+    height: 85vh;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+
+    &__left {
+        grid-column: 1;
+        padding: 2rem;
+        background-color: $color-primary;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    &__right {
+        padding: 10rem 15rem;
+        background-color: $color-grey-light-2;
+    }
+}

@@ -9,7 +9,7 @@
     max-height: 95vh;
 
     display: grid;
-    grid-template-columns:max-content 1fr;
+    grid-template-columns: minmax(20rem,max-content) 1fr;
 
 
     &__background {
@@ -18,7 +18,7 @@
         box-shadow: 0 1rem 5rem rgba($color-black, .3);
         
         display: grid;
-        grid-template-rows: 15rem repeat(4, min-content);
+        grid-template-rows: 10rem repeat(4, min-content);
         grid-template-columns:minmax(15rem, max-content);
         justify-items: center;
         align-items: center;
@@ -27,8 +27,8 @@
     &__content {
         display: grid;
         grid-row: 1;
-        grid-template-columns: 18rem minmax(20rem,1fr);
-        grid-column-gap: 1rem;
+        grid-template-columns: 11rem minmax(20rem,1fr);
+        grid-column-gap: .2rem;
         justify-self: stretch;  
               
         &--heading {
@@ -42,7 +42,7 @@
             display: block;
             display: grid;
             grid-column: 1;
-            width: 15rem;
+            width: 10rem;
         }
     }
 
@@ -57,7 +57,7 @@
             text-transform: uppercase;
             letter-spacing: .5rem;
             text-align: center;
-            //background-color: rgba($color: $color-white, $alpha: .1);
+            background-color: rgba($color: $color-white, $alpha: .1);
             margin-bottom: 2rem;
             border-radius: 5px;
             box-shadow: 0rem .5rem 2rem rgba($color-black, .2);
@@ -78,15 +78,15 @@
 
             &:hover {
                 cursor: pointer;
-                background-color: rgba($color: $color-primary, $alpha: .3);
+                background-color: rgba($color-primary, $alpha: .3);
                 color: $color-primary-dark;
                 border-radius: 5px;
                 border-color: $color-secondary;
             }
 
             &.current {
+                background-color: rgba($color-primary, $alpha: .3);
                 color: $color-primary-dark; 
-                border-color: $color-secondary;
             }
         }
 
@@ -103,10 +103,10 @@
         grid-row: 5;
 
         &--user {
-            width: 12rem;
+            width: 16rem;
             border: 2px $color-secondary solid;
             border-radius: 100px;
-            margin: 2rem 0;
+            margin-top: 2rem; 
         }
 
         &--text {
@@ -128,8 +128,9 @@
 
     &__span {
         color: $color-secondary;
-        font-size: 2.5rem;
+        font-size: 3rem;
         letter-spacing: .4rem;
+        margin-bottom: 1rem;
 
         &--js {
             color: $color-secondary;

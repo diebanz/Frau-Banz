@@ -1,7 +1,7 @@
 .header {
     grid-column: full-start / full-end;
     padding: 1rem;
-    background-image: linear-gradient(to right bottom, (rgba($color-primary-light, .7)),(transparent)),
+    background-image: linear-gradient(to right bottom, (rgba($color-primary-light, .5)),(transparent)),
     url(../img/showcase.jpg);
     width: 100%;
     background-size: cover;
@@ -9,46 +9,38 @@
     max-height: 95vh;
 
     display: grid;
-    grid-template-columns: minmax(20rem,max-content) 1fr;
-
+    grid-template-columns: minmax(20rem, max-content) 1fr;
 
     &__background {
         grid-column: 1;
         background-image: linear-gradient(to bottom, (rgba($color-primary-light, .7)), (transparent));
-        box-shadow: 0 1rem 5rem rgba($color-black, .3);
+        box-shadow: 0 1rem 1rem rgba($color-black, .3);
         
         display: grid;
-        grid-template-rows: 10rem repeat(4, min-content);
-        grid-template-columns:minmax(15rem, max-content);
+        grid-template-columns: (25rem, max-content);
         justify-items: center;
         align-items: center;
     }
 
     &__content {
         display: grid;
-        grid-row: 1;
         grid-template-columns: 11rem minmax(20rem,1fr);
         grid-column-gap: .2rem;
         justify-self: stretch;  
               
         &--heading {
-            display: grid;
-            grid-column: 2;
             align-self: center;
             display: flex;
         }
     
         &--logo {
-            display: block;
-            display: grid;
-            grid-column: 1;
             width: 10rem;
+            margin-left: 1rem;
         }
     }
 
     &__nav {
         display: grid;
-        grid-row: 3; 
         margin: 2rem 0;       
         
         &--items {
@@ -100,7 +92,6 @@
         display: grid;
         justify-items: center;
         align-items: center;
-        grid-row: 5;
 
         &--user {
             width: 16rem;
@@ -108,24 +99,8 @@
             border-radius: 100px;
             margin-top: 2rem; 
         }
-
-        &--text {
-            font-family: $second-font;
-            font-size: 1.5rem;
-            font-weight: 400;
-        }
     }
-
-    &__line {
-        display: grid;
-        grid-row: 2;
-
-        &--2 {
-            display: grid;
-            grid-row: 4;
-        }
-    }
-
+    
     &__span {
         color: $color-secondary;
         font-size: 3rem;

@@ -8,7 +8,7 @@ body {
   padding: 2rem; }
 
 ::selection {
-  background-color: #71b9c9;
+  background-color: #50a3ae;
   color: #fff; }
 
 html {
@@ -39,15 +39,25 @@ body {
     color: #2d4a61; }
   .heading-2 {
     font-size: 4rem;
-    color: #a00037; }
+    color: #a00037;
+    margin-bottom: 8rem; }
+  .heading-3 {
+    font-size: 3rem;
+    color: #a00037;
+    margin-bottom: 8rem; }
   .heading-4 {
     font-size: 2rem;
     line-height: 1.3;
     margin-bottom: 1rem; }
 
+p {
+  font-family: "Lora";
+  font-size: 1.8rem;
+  line-height: 2; }
+
 .breaking-line {
   height: 2px;
-  width: 52rem;
+  width: 40%;
   background-color: rgba(195, 253, 255, 0.5);
   display: block;
   margin-bottom: 1rem; }
@@ -58,7 +68,7 @@ body {
 .header {
   grid-column: full-start / full-end;
   padding: 1rem;
-  background-image: linear-gradient(to right bottom, rgba(195, 253, 255, 0.7), transparent), url(../img/showcase.jpg);
+  background-image: linear-gradient(to right bottom, rgba(195, 253, 255, 0.5), transparent), url(../img/showcase.jpg);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,31 +78,24 @@ body {
   .header__background {
     grid-column: 1;
     background-image: linear-gradient(to bottom, rgba(195, 253, 255, 0.7), transparent);
-    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
     display: grid;
-    grid-template-rows: 10rem repeat(4, min-content);
-    grid-template-columns: minmax(15rem, max-content);
+    grid-template-columns: 25rem, max-content;
     justify-items: center;
     align-items: center; }
   .header__content {
     display: grid;
-    grid-row: 1;
     grid-template-columns: 11rem minmax(20rem, 1fr);
     grid-column-gap: .2rem;
     justify-self: stretch; }
     .header__content--heading {
-      display: grid;
-      grid-column: 2;
       align-self: center;
       display: flex; }
     .header__content--logo {
-      display: block;
-      display: grid;
-      grid-column: 1;
-      width: 10rem; }
+      width: 10rem;
+      margin-left: 1rem; }
   .header__nav {
     display: grid;
-    grid-row: 3;
     margin: 2rem 0; }
     .header__nav--items {
       list-style: none;
@@ -117,12 +120,12 @@ body {
       transition: border-color 0.5s; }
       .header__nav--link:hover {
         cursor: pointer;
-        background-color: rgba(113, 185, 201, 0.3);
+        background-color: rgba(80, 163, 174, 0.3);
         color: #2d4a61;
         border-radius: 5px;
         border-color: #d81b60; }
       .header__nav--link.current {
-        background-color: rgba(113, 185, 201, 0.3);
+        background-color: rgba(80, 163, 174, 0.3);
         color: #2d4a61; }
     .header__nav--icon {
       margin-right: 2rem;
@@ -130,23 +133,12 @@ body {
   .header__info {
     display: grid;
     justify-items: center;
-    align-items: center;
-    grid-row: 5; }
+    align-items: center; }
     .header__info--user {
       width: 16rem;
       border: 2px #d81b60 solid;
       border-radius: 100px;
       margin-top: 2rem; }
-    .header__info--text {
-      font-family: "Lora";
-      font-size: 1.5rem;
-      font-weight: 400; }
-  .header__line {
-    display: grid;
-    grid-row: 2; }
-    .header__line--2 {
-      display: grid;
-      grid-row: 4; }
   .header__span {
     color: #d81b60;
     font-size: 3rem;
@@ -158,18 +150,50 @@ body {
 
 .about {
   grid-column: full-start / full-end;
-  margin: 15rem 0;
-  padding: 5rem;
+  margin: 10rem 0;
+  padding: 1rem;
   height: 85vh;
   display: grid;
   grid-template-columns: repeat(2, minmax(25rem, 1fr)); }
   .about__left {
     grid-column: 1;
     padding: 2rem;
-    background-color: #71b9c9;
+    background-color: rgba(80, 163, 174, 0.6);
     display: grid;
     justify-items: center;
     align-items: center; }
+    .about__left--picture {
+      width: 45rem; }
   .about__right {
     padding: 10rem 15rem;
     background-color: #eee; }
+    .about__right--text {
+      text-indent: 3rem; }
+
+.projects {
+  grid-column: full-start / full-end;
+  margin: 10rem 0;
+  padding: 1rem;
+  height: 95vh;
+  display: grid;
+  grid-template-rows: 10rem repeat(3, max-content); }
+  .projects__heading {
+    display: grid;
+    grid-row: 1; }
+  .projects__title {
+    display: grid;
+    grid-row: 2; }
+  .projects__photography {
+    background-color: #c3fdff;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    padding: 1.5rem;
+    grid-gap: 1.5rem; }
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; }

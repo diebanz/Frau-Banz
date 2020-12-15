@@ -51,7 +51,8 @@ body {
 p {
   font-family: "Lora";
   font-size: 1.8rem;
-  line-height: 2; }
+  line-height: 2;
+  text-align: center; }
 
 .breaking-line {
   height: 2px;
@@ -151,7 +152,6 @@ p {
 .about {
   grid-column: full-start / full-end;
   margin: 5rem 0;
-  padding: 1rem;
   height: 95vh;
   display: grid;
   grid-template-columns: repeat(2, minmax(25rem, 1fr)); }
@@ -175,24 +175,56 @@ p {
 
 .projects {
   grid-column: full-start / full-end;
-  margin: 5rem 0;
-  height: 95vh;
+  margin: 10rem 0;
   display: grid;
-  grid-template-rows: repeat(4, max-content);
-  grid-template-columns: repeat(3, minmax(35rem, max-content)); }
+  grid-template-rows: repeat(5, max-content);
+  grid-template-columns: repeat(3, minmax(35rem, max-content));
+  justify-items: center;
+  align-items: center; }
   .projects__heading {
     display: grid;
     grid-row: 1;
     grid-column: 1 / 4;
-    margin-bottom: 4rem; }
-  .projects__title {
+    margin: 3rem 0; }
+  .projects__table {
     display: grid;
     grid-row: 2;
+    grid-column: 1 / 4;
+    padding: 12rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25rem, 1fr));
+    grid-row-gap: 2rem; }
+    .projects__table--interest {
+      display: grid;
+      grid-template-rows: repeat(3, max-content);
+      justify-items: center;
+      align-items: center; }
+    .projects__table--icons {
+      display: grid;
+      grid-row: 1;
+      font-size: 10rem;
+      margin: 5rem 0;
+      padding: 2rem;
+      border: 2px solid #d81b60;
+      border-radius: 50%;
+      background-color: rgba(80, 163, 174, 0.8); }
+    .projects__table--name {
+      display: grid;
+      grid-row: 2;
+      color: #50a3ae; }
+    .projects__table--text {
+      display: grid;
+      grid-row: 3;
+      text-indent: 3rem;
+      margin: 1rem 0; }
+  .projects__title {
+    display: grid;
+    grid-row: 3;
     grid-column: 1 / 4;
     margin: 4rem 0; }
   .projects__photography {
     background-color: #c3fdff;
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1 / 4;
     display: grid;
     grid-template-columns: repeat(8, 1fr);

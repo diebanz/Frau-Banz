@@ -1,33 +1,36 @@
 .projects {
     grid-column: full-start / full-end;
     margin: 5rem 0;
-    padding: 1rem;
     height: 95vh;
 
     display: grid;
     grid-template-rows: repeat(4, max-content);
+    grid-template-columns: repeat(3, minmax(35rem, max-content));
 
     &__heading {
         display: grid;
         grid-row: 1;
+        grid-column: 1 / 4;
         margin-bottom: 4rem;
     }
 
     &__title {
         display: grid;
         grid-row: 2;
+        grid-column: 1 / 4;
         margin: 4rem 0;
     }
 
     &__photography {
         background-color: $color-primary-light;
         grid-row: 3;
-    
+        grid-column: 1 / 4;
+        
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(9, 7vw);
-        padding: 1.5rem;
-        grid-gap: 1.5rem;
+        padding: 1rem;
+        grid-gap: 1rem;
     }   
 }
 
@@ -38,6 +41,7 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        border: 1px solid $color-primary-dark;
     }
 
     &__item {

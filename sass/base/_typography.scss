@@ -13,12 +13,12 @@ body {
     text-transform: uppercase;
 
     &-1 {
-        font-size: 5.5rem;
+        font-size: 6.5rem;
         color: $color-primary-dark;
     }
 
     &-2 {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
         color: $color-secondary-dark;
     }
 
@@ -36,8 +36,8 @@ body {
 
 p {
     font-family: $second-font;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2;
-    text-align: center;
+    text-align: justify;
 }
 

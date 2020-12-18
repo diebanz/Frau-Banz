@@ -1,0 +1,17 @@
+.btn {
+    padding: 1.2rem 5rem;
+    margin: 2rem 0;
+    border: none;
+    background-color: rgba($color-secondary, .7);
+    cursor: pointer;
+    border-radius: 100px;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba($color-primary-dark, .7);
+    transform: scale(1.05);
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1);
+        background-color: $color-primary;
+    }
+}

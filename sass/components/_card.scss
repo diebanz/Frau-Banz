@@ -1,0 +1,26 @@
+.card {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    background-color: rgba($color-primary, .6);
+    padding: 2rem;
+    box-shadow: .5rem 1rem 2rem rgba($color-primary-dark, $alpha: .7);
+   
+    &__img {
+        width: 100%;
+        opacity: .7;
+        grid-row: 1;
+        border: 1px solid $color-primary-light;
+        box-shadow: .3rem .7rem 1rem rgba($color-black, .7);
+    }
+
+    &__pages {
+        grid-row: 2;
+        margin: 5rem 0;
+        
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}

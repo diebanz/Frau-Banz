@@ -1,8 +1,6 @@
 .projects {
     grid-column: full-start / full-end;
     margin: 2rem 0;
-    height: 95vh;
-
         
     display: grid;
     grid-template-rows: repeat(auto-fit, max-content);

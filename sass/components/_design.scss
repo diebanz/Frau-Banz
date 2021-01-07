@@ -1,0 +1,51 @@
+.showcase__design{
+
+    &--img {
+        width: 20%;      
+        display: grid;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        &:hover {
+        outline: 1.5rem solid $color-secondary;
+        transform: scale(1.2) translateY(-5rem);
+        box-shadow: 0 .25rem 4rem rgba($color-black, .5);
+        z-index: 20;
+        }
+    }
+
+    &--1 {
+        right: 10%;    
+        top: 0;
+    }
+    &--2 {
+        right: 10%;    
+        top: 38rem;
+    }
+    &--3 {
+        left: 0;    
+        top: 0;
+    }
+    &--4 {
+        left: 15%;
+        top: 4rem;
+    }
+    &--5 {
+        left: 30%;
+        top: 8rem;
+    }
+    &--6{
+        left: 45%;
+        top: 12rem;
+    }
+    
+
+    &:hover &--img:not(:hover) {
+        transform: scale(.8)
+    }
+
+}

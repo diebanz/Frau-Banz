@@ -1,24 +1,21 @@
 .footer {
     grid-column: full-start / full-end;
     background-image: linear-gradient(to bottom, (rgba($color-primary, .3)), (rgba($color-primary-dark, 1.0)));
-    padding: 3rem;
+    padding: 5rem;
     border-top: 1px solid rgba($color-grey-light-3, .2);
 
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    justify-items: center;
+    align-items: center;
     
     &__nav {
         display: grid;
         grid-template-columns: repeat(4, minmax(min-content, 1fr));
-        
+        grid-gap: 3rem;
         justify-items: center;
         align-items: flex-end;
-        padding: 4rem;
 
-        &--item {
-
-          
-        }
     }
 
     &__link {
@@ -26,10 +23,16 @@
         font-weight: 700;
         color: $color-primary-light;
         border-bottom: 2px solid transparent;
+       
 
         &:hover {
             color: $color-secondary-dark;
             border-bottom: 2px solid $color-secondary-dark;
         }
+    }
+
+    &__copy {
+        font-size: 3rem;    
+        color: $color-primary-light;
     }
 }

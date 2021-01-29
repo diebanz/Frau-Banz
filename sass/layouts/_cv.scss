@@ -8,12 +8,34 @@
     justify-items: center;
     align-items: center;
 
-    border: 1px solid $color-primary;
+    border: 1rem solid $color-primary;
 }
 
 .timeline {
-    
 
+    &__heading {
+        font-family: $second-font;
+        font-size: 2rem;
+        text-transform: none;
+        text-decoration: underline;
+    }
+
+    &__span {
+        font-weight: bold;
+    }
+
+    &__text {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    &__icon {
+        font-size: 1.6rem;
+        text-align: center;
+        color: $color-secondary-dark;
+    }
+    
     &__list {
         padding: 5rem 0;
 
@@ -40,7 +62,7 @@
             }
 
             &:nth-child(odd) div {
-                left: 5rem;
+                left: 4rem;
                 transform: translateX(15rem);
 
                 &:before {
@@ -51,7 +73,7 @@
             }
 
             &:nth-child(even) div {
-                left: -53.4rem;
+                left: -73rem;
                 transform: translateX(-15rem);
 
                 &:before {
@@ -76,14 +98,14 @@
             border: 2px solid $color-primary;
             position: relative;
             bottom: 0;
-            width: 50rem;
-            padding: 1rem;
+            width: 70rem;
+            padding: 2rem;
             background-color: rgba($color-primary, .7);
             box-shadow: 0 2rem 4rem rgba($color-black, .5);
             transition: all .5s ease-in-out;  
             visibility: hidden;
             opacity: 0;
-
+           
             &::before {
                 content: '';
                 position: absolute;
@@ -93,6 +115,26 @@
                 border-style: solid;
             }
         }
+    }
+}
+
+.certificat {
+    width: 32%;      
+    box-shadow: 0 .5rem 1rem rgba($color-black, .4);
+    border-radius: 2px;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem;
+
+    &:hover {
+        outline: 1.5rem solid $color-secondary;
+        transform: scale(2) translateY(-5rem);
+        box-shadow: 0 .25rem 4rem rgba($color-black, .5);
+        z-index: 20;
+    }
+
+    &:not(:hover) {
+        transform: scale(.9)
     }
 }
 

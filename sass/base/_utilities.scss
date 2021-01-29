@@ -9,7 +9,11 @@ a {
     font-family: $default-font;
     text-decoration: none;
     color: $color-primary-light;
-    font-size: 2rem;
+    font-size: 1.6rem;
     letter-spacing: .3rem;
     text-transform: uppercase;
+
+    &:hover {
+        color: $color-secondary-dark;
+    }
 }

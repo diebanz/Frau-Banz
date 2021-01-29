@@ -1,0 +1,20 @@
+.contact {
+    grid-column: full-start / full-end; 
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid $color-secondary-dark;
+
+    &__form {
+
+    }
+
+    &__pic {
+        background-image: linear-gradient(to right bottom, (rgba($color-secondary-light, .2)),(rgba($color-secondary-dark, .3))),
+        url(../img/contactimg.jpg);
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+}

@@ -10,46 +10,37 @@
 }
 
 .timeline {
-
-    //width: 10px;
-    background-color: $color-primary;
-    
     
 
-    &__boxes {
-        list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1rem 1.5rem 1rem 1fr;
-        grid-template-rows: repeat(6, minmax(20rem, min-content));
-        grid-gap: 1rem;
+    &__list {
+        padding: 5rem 0;
 
-        justify-items: center;
-        align-items: center;
+        &--item {
+            list-style: none;
+            position: relative;
+            width: 1rem;
+            margin: 0 auto;
+            padding-top: 5rem;
+            background-color: $color-primary;
 
-        &--1 {
-            display: grid;
-            grid-column: 1 / 2;
-            grid-row: 1;
+            &:nth-child(odd) div {
+                left: 5rem;
+            }
+
+            &:nth-child(even) div {
+                left: -53.4rem;
+            }
         }
-        &--2 {
-            display: grid;
-            grid-column: 5 / 6;
-            grid-row: 2;
-        }
-        &--3 {
-            display: grid;
-            grid-column: 1 / 2;
-            grid-row: 3;
-        }
-        &--4 {
-            display: grid;
-            grid-column: 5 / 6;
-            grid-row: 4;
-        }
-        &--5 {
-            display: grid;
-            grid-column: 1 / 2;
-            grid-row: 5;
+        
+        &--box {
+            position: relative;
+            bottom: 0;
+            width: 50rem;
+            padding: 1rem;
+            background-color: rgba($color-primary, .7);
+            box-shadow: 0 2rem 4rem rgba($color-black, .5);
+            transition: all .5s ease-in-out;  
         }
     }
 }
+

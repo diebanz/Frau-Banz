@@ -291,67 +291,52 @@
                     </ul>
                 </div>
             </section>
-            <section class="contact">
-                <div class="contact__text">
-                    <form action="#" class="contact__form" >
-                        <div class="contact__box">
-                            <div class="labels">
-                                <label for="name">Full Name</label>
+            <section class="formular">
+                
+                <div class="formular__content">
+                    <form class="formular__form" action="#">
+                        <div class="formular__form-user">
+                            <label for="name" class="formular__heading-5 heading heading-3">Your full name</label>
+                            <input type="text" name="username" placeholder="Full name" required class="formular__input" id="formular__name">
+                        </div>
+                        <div class="formular__form-gender">
+                            <div>
+                                <label for="gender" class="formular__title ">Gender</label>
                             </div>
-                            <div class="inputs">
-                                <input type="text" name="name" id="name" placeholder="Your full Name">
+                            <div>
+                                <div class="formular__radio--group">
+                                    <input type="radio" class="formular__radio--input" id="small" name="size">
+                                    <label for="small" class="formular__radio--label">
+                                        <span class="formular__radio--button"></span>
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="formular__radio-group">
+                                    <input type="radio" class="formular__radio--input" id="large" name="size">
+                                    <label for="large" class="formular__radio--label">
+                                        <span class="formular__radio--button"></span>
+                                        Female
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact__box">
-                            <div class="labels">
-                                <label for="email">Your Email</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="email" name="email" id="email" placeholder="Your Email" required>
-                            </div>
+                        <div class="formular__form-contact">
+                            <h5 class="formular__heading-5 heading heading-3">How can I contact you?</h5>
+                            <label for="phone" class="formular__title">Your phone number</label>
+                            <input type="text" name="phonenumber" placeholder="Phone number" required class="formular__input"> 
+                            <label for="email" class="formular__title ">Your Email</label>
+                            <input type="text" name="email" placeholder="Email adress" required class="formular__input"> 
                         </div>
-                        <div class="contact__box">
-                            <div class="labels">
-                                <label for="find-us">How did You find me?</label>
-                            <div class="inputs">
-                                <select name="find-us" id="find-us">
-                                    <option value="friends" selected>Friends</option>
-                                    <option value="search" selected>Search Engine</option>
-                                    <option value="link" selected>LinkIn</option>
-                                    <option value="Advertisement" selected>Advertisement</option>
-                                    <option value="other" selected>other</option>
-                                </select>
-                            </div>
+                        <div class="formular__form-message">
+                            <label for="email" class="formular__title ">Ask your questions</label>                     
+                            <textarea name="comment" id="formular__comment" cols="20" rows="8" class="formular__input" placeholder="Please, ask you question here" required >Please, ask you question here</textarea> 
                         </div>
-                        <div class="contact__box">
-                            <div class="labels">
-                                <label for="message">Drop me a line</label>
-                            </div>
-                            <div class="inputs">
-                                <textarea name="message" placeholder="Your Message" required></textarea>
-                            </div>
-                        </div>
-                        <div class="contact__box">
-                            
-                            <div class="labels">
-                                <label>&nbsp;</label>
-                            </div>
-                            <div class="boxes">
-                                <input type="submit" value="Send it!" class="btn">
-                            </div>
-                        </div>
-                    </form>            
+                        <button class="btn formular__button">Send !</button>
+                    </form>           
                 </div>
-
-
-                  
-                    
-                    
-                </div>
-                <div class="contact__pic">
-
-                </div>
+                <div class="formular__picture"></div>
             </section>
+
             <section class="footer">
                 <ul class="footer__nav">
                     <a href="#" class="footer__nav--item1 footer__link">Start</a>

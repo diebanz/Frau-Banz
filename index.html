@@ -291,50 +291,34 @@
                     </ul>
                 </div>
             </section>
-            <section class="formular">
-                
-                <div class="formular__content">
-                    <form class="formular__form" action="#">
-                        <div class="formular__form-user">
-                            <label for="name" class="formular__heading-5 heading heading-3">Your full name</label>
-                            <input type="text" name="username" placeholder="Full name" required class="formular__input" id="formular__name">
-                        </div>
-                        <div class="formular__form-gender">
-                            <div>
-                                <label for="gender" class="formular__title ">Gender</label>
-                            </div>
-                            <div>
-                                <div class="formular__radio--group">
-                                    <input type="radio" class="formular__radio--input" id="small" name="size">
-                                    <label for="small" class="formular__radio--label">
-                                        <span class="formular__radio--button"></span>
-                                        Male
-                                    </label>
-                                </div>
-                                <div class="formular__radio-group">
-                                    <input type="radio" class="formular__radio--input" id="large" name="size">
-                                    <label for="large" class="formular__radio--label">
-                                        <span class="formular__radio--button"></span>
-                                        Female
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="formular__form-contact">
-                            <h5 class="formular__heading-5 heading heading-3">How can I contact you?</h5>
-                            <label for="phone" class="formular__title">Your phone number</label>
-                            <input type="text" name="phonenumber" placeholder="Phone number" required class="formular__input"> 
-                            <label for="email" class="formular__title ">Your Email</label>
-                            <input type="text" name="email" placeholder="Email adress" required class="formular__input"> 
-                        </div>
-                        <div class="formular__form-message">
-                            <label for="email" class="formular__title ">Ask your questions</label>                     
-                            <textarea name="comment" id="formular__comment" cols="20" rows="8" class="formular__input" placeholder="Please, ask you question here" required >Please, ask you question here</textarea> 
-                        </div>
-                        <button class="btn formular__button">Send !</button>
-                    </form>           
-                </div>
-                <div class="formular__picture"></div>
+            <section class="contact">
+                <form action="#" class="contact__form">
+                    <div class="contact__form--box">
+                        <label for="fullName" class="contact__form--label">Your full Name</label>
+                        <input type="text" id="fullName" class="contact__form--input">
+                    </div>
+                    <div class="contact__form--box">
+                        <label for="eMail" class="contact__form--label">Your email</label>
+                        <input type="text" id="eMail" class="contact__form--input">
+                    </div>
+                    <div class="contact__form--box">
+                        <label for="findOut" class="contact__form--label">How did you find out about me</label>
+                        <select name="findOut" id="findOut">
+                            <option label="Please select one"></option>
+                            <option disabled>-------------------</option>
+                            <option value="Linkin">LinkIn</option>
+                            <option value="Github">GitHub</option>
+                            <option value="searchengine">Search Engine</option>
+                        </select>
+                    </div>
+                    <div class="contact__form--box">
+                        <label for="message" class="contact__form--label">Write us your message</label>
+                        <textarea name="message" id="message" class="contact__form--label"></textarea>
+                    </div>
+                    
+                    <input type="submit" value="Send it now!" class="contact--submit btn">
+    
+                </form>
             </section>
 
             <section class="footer">

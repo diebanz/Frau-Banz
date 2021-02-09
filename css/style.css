@@ -73,19 +73,23 @@ a {
 
 .btn {
   color: #fff;
+  font-family: "Lora";
+  font-size: 2rem;
   padding: 2rem 5rem;
   margin: 2rem 0;
   border: none;
   background-color: rgba(216, 27, 96, 0.7);
-  cursor: pointer;
   border-radius: 100px;
   text-align: center;
   box-shadow: 0 1rem 2rem rgba(45, 74, 97, 0.3);
   transform: scale(1.05);
-  transition: all .2s; }
+  transition: all .2s;
+  cursor: pointer;
+  text-transform: uppercase; }
   .btn:hover {
-    transform: scale(1);
-    background-color: #50a3ae; }
+    transform: scale(0.95);
+    background-color: #50a3ae;
+    color: #d81b60; }
 
 .card {
   display: grid;
@@ -387,13 +391,14 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
   .contact__form {
+    padding-top: 12rem;
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center; }
     .contact__form--box {
       display: flex;
       flex-direction: column;
-      margin-bottom: 3rem; }
+      margin-bottom: 5rem; }
     .contact__form--label {
       font-family: "Lora";
       font-size: 2.5rem;
@@ -403,7 +408,7 @@ a {
       width: 70%;
       margin: auto;
       padding: 1rem 2rem;
-      background-color: #2d4a61;
+      background-color: rgba(45, 74, 97, 0.7);
       border: 1px solid #c3fdff;
       color: #f4f4f4;
       font-family: "Lora";
@@ -440,7 +445,7 @@ a {
       align-items: center;
       padding: 2rem;
       box-shadow: 0rem 1rem 1.5rem rgba(0, 0, 0, 0.3);
-      background-color: #eee; }
+      background-color: whitesmoke; }
       .projects__table--interest:nth-child(odd) {
         background-color: rgba(195, 253, 255, 0.3); }
     .projects__table--icons {

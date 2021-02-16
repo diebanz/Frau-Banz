@@ -9,11 +9,6 @@ body {
     //padding: 1rem; 
 }
 
-::selection {
-    background-color: $color-primary;
-    color: $color-white;
-}
-
 html {
     font-size: 62.5%;
     line-height: 1.8;
@@ -21,9 +16,8 @@ html {
 
 .container {
     max-width: 190rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: $color-grey-light-1;
+    margin: auto;
+    background-color: $color-grey-light-2;
     display: grid;
     grid-template-rows: 100vh repeat(6, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start]repeat(11, [col-start] minmax(min-content, 20rem) [col-end] )[center-end] minmax(6rem, 1fr) [full-end];

@@ -1,6 +1,6 @@
 # Natalia Banz - Aps on the Mission!
 
-- My personal website project, mostly wanted to just show my style working, and solutions i feel comfortable with.
+- My personal website project, mostly wanted to just show my style of working, and solutions i feel comfortable with.
 - Page looks slightly better in FireFox browser. Still fixing for other browsers :)
 - **Page is not yet responsive**, but will be.
 

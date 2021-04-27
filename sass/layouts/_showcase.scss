@@ -9,22 +9,19 @@
         padding: 1rem;
         grid-gap: 1rem;
         margin: 6rem 0;
-    }   
+    }
 
     &__webdev {
-        padding: 8rem 4rem;
+        padding: 4rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
         grid-gap: 4rem;
         margin: 6rem 0;
-    }   
+    }
 
     &__title {
         display: grid;
-        margin: 10rem 0 4rem 0;
+        margin: 10rem 0;
         font-size: 4rem;
     }
 }
-
-
-

@@ -1,18 +1,14 @@
 .cv {
     grid-column: full-start / full-end;
-    padding: 8rem 4rem;
-    margin: 12rem 1rem 6rem 0;
+    margin: 4rem auto;
     display: grid;
     grid-template-rows: 10rem 1fr;
 
     justify-items: center;
     align-items: center;
-
-    //border: 1rem solid $color-primary;
 }
 
 .timeline {
-
     &__heading {
         font-family: $second-font;
         font-size: 2rem;
@@ -35,7 +31,7 @@
         text-align: center;
         color: $color-secondary-dark;
     }
-    
+
     &__list {
         padding: 5rem 0;
 
@@ -48,7 +44,7 @@
             background-color: $color-secondary;
 
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 50%;
                 bottom: 0;
@@ -57,8 +53,7 @@
                 background-color: $color-secondary;
                 transform: translateX(-50%);
                 border-radius: 50%;
-                transition: background-color .5s ease-in-out;
-               
+                transition: background-color 0.5s ease-in-out;
             }
 
             &:nth-child(odd) div {
@@ -68,7 +63,8 @@
                 &:before {
                     left: -1.5rem;
                     border-width: 1rem 1.5rem 1rem 0;
-                    border-color: transparent $color-primary transparent transparent;
+                    border-color: transparent $color-primary transparent
+                        transparent;
                 }
             }
 
@@ -79,7 +75,8 @@
                 &:before {
                     right: -1.5rem;
                     border-width: 1rem 0 1rem 1.5rem;
-                    border-color: transparent  transparent transparent $color-primary;
+                    border-color: transparent transparent transparent
+                        $color-primary;
                 }
             }
         }
@@ -93,23 +90,23 @@
         &--item.show:after {
             background-color: $color-primary;
         }
-        
+
         &--box {
             border: 2px solid $color-primary;
             position: relative;
             bottom: 0;
             width: 70rem;
             padding: 2rem;
-            background-color: rgba($color-primary, .7);
-            box-shadow: 0 2rem 4rem rgba($color-black, .5);
-            transition: all .5s ease-in-out;  
+            background-color: rgba($color-primary, 0.7);
+            box-shadow: 0 2rem 4rem rgba($color-black, 0.5);
+            transition: all 0.5s ease-in-out;
             visibility: hidden;
             opacity: 0;
-           
+
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
-                bottom: .5rem;
+                bottom: 0.5rem;
                 width: 0;
                 height: 0;
                 border-style: solid;
@@ -119,22 +116,78 @@
 }
 
 .certificat {
-    width: 32%;      
-    box-shadow: 0 .5rem 1rem rgba($color-black, .4);
+    width: 32%;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
     border-radius: 2px;
     z-index: 10;
-    transition: all .2s;
+    transition: all 0.2s;
     outline-offset: 2rem;
 
     &:hover {
         outline: 1.5rem solid $color-secondary;
         transform: scale(2) translateY(-5rem);
-        box-shadow: 0 .25rem 4rem rgba($color-black, .5);
+        box-shadow: 0 0.25rem 4rem rgba($color-black, 0.5);
         z-index: 20;
     }
 
     &:not(:hover) {
-        transform: scale(.9)
+        transform: scale(0.9);
     }
 }
 
+@media screen and (max-width: $bp-large) {
+    .timeline__text {
+        font-size: 1.5rem;
+        line-height: 1;
+        margin-top: 0.5rem;
+    }
+
+    .timeline__list {
+        &--item {
+            &:nth-child(even) div {
+                left: -58rem;
+            }
+        }
+
+        &--box {
+            width: 55rem;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-desktop) {
+    .timeline__text {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .timeline__list {
+        &--item {
+            &:nth-child(even) div {
+                left: -48rem;
+            }
+        }
+
+        &--box {
+            width: 45rem;
+        }
+    }
+}
+@media screen and (max-width: $bp-tablet) {
+    .timeline__text {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .timeline__list {
+        &--item {
+            &:nth-child(even) div {
+                left: -48rem;
+            }
+        }
+
+        &--box {
+            width: 45rem;
+        }
+    }
+}

@@ -1,26 +1,26 @@
 .about {
-    grid-column: full-start / full-end;
-    margin: 15rem 0;
+    grid-column: center-start / center-end;
+    margin: 7.5rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 
     &__left {
-        padding: 2rem;
-        background-color: $color-primary;     
-        display: grid;
-        justify-items: center;
-        align-items: center;
+        width: 100%;
+        background-color: $color-primary;
         border: 5px solid $color-primary;
 
-        &--picture {
-            width: 50%;
-            border: 1px solid rgba($color-secondary, .3);
-            box-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+        & img {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
     }
 
     &__right {
-        padding: 10rem 15rem;
+        padding: 10rem;
         background-color: $color-grey-light-3;
         border: 5px solid $color-primary;
 
@@ -34,4 +34,3 @@
         }
     }
 }
-

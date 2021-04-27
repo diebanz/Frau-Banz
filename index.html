@@ -1,87 +1,144 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Natalia Banz - This is how i try to connect all things i love to do: web development, photography, design">
-        <meta name="keywords" content="web webdev photography design frontend coding css html js creating web">
-        
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Natalia Banz - This is how i try to connect all things i love to do: web development, photography, design"
+        />
+        <meta
+            name="keywords"
+            content="web webdev photography design frontend coding css html js creating web"
+        />
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/faviconsmall.png">
-       
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="img/faviconsmall.png"
+        />
+
         <title>Natalia Banz | Aps on the Mission!</title>
     </head>
     <body>
         <div class="container">
             <header class="header">
-                <div class="header__background">
-                    <div class="header__content">
-                        <div class="header__info">
-                            <img src="img/user.jpg" alt="user picture" class="header__info--user">
-                            <h4 class="heading heading-4"><span class="header__span">Natalia Banz</span> <br>- Aps on the Mission -</h4>
-                        </div>
-                        <h1 class="header__content--heading heading heading-1">
-                            Let's <span class="txt-type header__span--js" data-wait="3000"  data-words='["discuss it", "picture it", "code it", "ENJOY IT"]'></span>
-                        </h1>
+                <nav class="header__nav">
+                    <div class="header__info">
+                        <img
+                            src="img/user.jpg"
+                            alt="user picture"
+                            class="header__info--user"
+                        />
+                        <h3 class="heading heading-3 header__info--text">
+                            Natalia Banz
+                        </h3>
                     </div>
-                    <div class="breaking-line"></div>
-                    <nav class="header__nav">
-                        <ul>
-                            <li class="header__nav--items">
-                                <a class="header__nav--link current">
-                                    <ion-icon class="header__nav--icon" name="home"></ion-icon>
-                                    Home
-                                </a>    
-                            </li>
-                            <li class="header__nav--items">
-                                <a href="#" class="header__nav--link">
-                                    <ion-icon class="header__nav--icon" name="book"></ion-icon>
-                                    Blog
-                                </a>
-                            </li>
-                            <li class="header__nav--items">
-                                <a href="#" class="header__nav--link">
-                                    <ion-icon class="header__nav--icon" name="person-circle"></ion-icon>
-                                    about me
-                                </a>
-                            </li>
-                            <li class="header__nav--items">
-                                <a href="#" class="header__nav--link">
-                                    <ion-icon class="header__nav--icon"  name="bulb"></ion-icon>
-                                    My Projects
-                                </a>
-                            </li>
-                            <li class="header__nav--items">
-                                <a href="#" class="header__nav--link">
-                                    <ion-icon class="header__nav--icon" name="school"></ion-icon>
-                                    Curriculum Vitae
-                                </a>
-                            </li>
-                            <li class="header__nav--items">
-                                <a href="#" class="header__nav--link">
-                                    <ion-icon class="header__nav--icon" name="mail"></ion-icon>
-                                    contact
-                                </a>
-                            </li>
-                        </ul>
-                    </nav> 
-                    <div class="breaking-line"></div>
-                </div>
+                    <h1 class="heading heading-1">
+                        Let's
+                        <span
+                            class="txt-type header__span--js"
+                            data-wait="3000"
+                            data-words='["discuss it", "picture it", "code it", "ENJOY IT"]'
+                        ></span>
+                    </h1>
+                    <ul>
+                        <li class="header__nav--items">
+                            <a class="header__nav--link current">
+                                <ion-icon
+                                    class="header__nav--icon"
+                                    name="home"
+                                ></ion-icon>
+                                Home
+                            </a>
+                        </li>
+                        <li class="header__nav--items">
+                            <a href="#" class="header__nav--link">
+                                <ion-icon
+                                    class="header__nav--icon"
+                                    name="book"
+                                ></ion-icon>
+                                Blog
+                            </a>
+                        </li>
+                        <li class="header__nav--items">
+                            <a href="#" class="header__nav--link">
+                                <ion-icon
+                                    class="header__nav--icon"
+                                    name="person-circle"
+                                ></ion-icon>
+                                About me
+                            </a>
+                        </li>
+                        <li class="header__nav--items">
+                            <a href="#" class="header__nav--link">
+                                <ion-icon
+                                    class="header__nav--icon"
+                                    name="bulb"
+                                ></ion-icon>
+                                My Projects
+                            </a>
+                        </li>
+                        <li class="header__nav--items">
+                            <a href="#" class="header__nav--link">
+                                <ion-icon
+                                    class="header__nav--icon"
+                                    name="school"
+                                ></ion-icon>
+                                Curriculum Vitae
+                            </a>
+                        </li>
+                        <li class="header__nav--items">
+                            <a href="#" class="header__nav--link">
+                                <ion-icon
+                                    class="header__nav--icon"
+                                    name="mail"
+                                ></ion-icon>
+                                contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
 
             <section class="about">
                 <div class="about__left">
-                    <img src="img/autorbig.jpg" alt="Autor picture" class="about__left--picture">
+                    <img src="./img/autorbig.jpg" alt="autor portret" />
                 </div>
                 <div class="about__right">
-                    <h2 class="about__right--heading heading heading-2">Who am i?</h2>
+                    <h2 class="about__right--heading heading heading-2">
+                        Who am i?
+                    </h2>
                     <p class="about__right--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis nostrum neque quo libero atque deserunt ullam aspernatur possimus sit?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quasi facilis nostrum neque quo libero atque deserunt
+                        ullam aspernatur possimus sit?
                     </p>
-                    <p class="about__right--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit! Dolorem ullam modi, ipsum, in animi officia fuga illum cumque soluta doloremque, architecto temporibus omnis eligendi? Esse aliquam laudantium illo id ducimus impedit delectus quo, nostrum consequatur totam dolorem? Placeat sunt quo libero dolor fuga? Sint numquam ipsam sed exercitationem!</p>
-                    <p class="about__right--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eveniet libero voluptatum labore, voluptatibus aut sunt eaque odio laborum qui at maxime veritatis quia, soluta totam atque non? Voluptatum, amet.</p>
+                    <p class="about__right--text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Ipsum, odit! Dolorem ullam modi, ipsum, in animi
+                        officia fuga illum cumque soluta doloremque, architecto
+                        temporibus omnis eligendi? Esse aliquam laudantium illo
+                        id ducimus impedit delectus quo, nostrum consequatur
+                        totam dolorem? Placeat sunt quo libero dolor fuga? Sint
+                        numquam ipsam sed exercitationem!
+                    </p>
+                    <p class="about__right--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorem eveniet libero voluptatum labore, voluptatibus
+                        aut sunt eaque odio laborum qui at maxime veritatis
+                        quia, soluta totam atque non? Voluptatum, amet.
+                    </p>
                 </div>
             </section>
 
@@ -92,24 +149,74 @@
 
                 <div class="projects__table">
                     <div class="projects__table--interest">
-                        <ion-icon class="projects__table--icons" name="camera"></ion-icon>
-                        <h3 class="projects__table--name heading heading-3">Photography</h3>
-                        <p class="projects__table--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consequuntur perspiciatis. Id, harum voluptates repellat ducimus sint expedita consectetur laboriosam error consequuntur praesentium distinctio corporis et quos quasi, alias nihil beatae natus iste, delectus eligendi provident! Aliquam ullam fuga cum sunt amet labore, earum, accusamus officia eum quia eaque molestias.  </p>
+                        <ion-icon
+                            class="projects__table--icons"
+                            name="camera"
+                        ></ion-icon>
+                        <h3 class="projects__table--name heading heading-3">
+                            Photography
+                        </h3>
+                        <p class="projects__table--text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et, consequuntur perspiciatis. Id, harum
+                            voluptates repellat ducimus sint expedita
+                            consectetur laboriosam error consequuntur
+                            praesentium distinctio corporis et quos quasi, alias
+                            nihil beatae natus iste, delectus eligendi
+                            provident! Aliquam ullam fuga cum sunt amet labore,
+                            earum, accusamus officia eum quia eaque molestias.
+                        </p>
                     </div>
                     <div class="projects__table--interest">
-                        <ion-icon class="projects__table--icons" name="desktop"></ion-icon>
-                        <h3 class="projects__table--name heading heading-3">web development</h3>
-                        <p class="projects__table--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, qui repellendus. Aperiam autem amet possimus quis, veritatis suscipit tempore, fugit at cumque ea laudantium et praesentium nostrum placeat magni ipsa libero ullam id nulla minus eveniet voluptatum velit. Quibusdam totam consectetur consequuntur hic voluptatem voluptatum debitis quasi explicabo quae delectus! </p>
+                        <ion-icon
+                            class="projects__table--icons"
+                            name="desktop"
+                        ></ion-icon>
+                        <h3 class="projects__table--name heading heading-3">
+                            web development
+                        </h3>
+                        <p class="projects__table--text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Voluptates, qui repellendus. Aperiam autem
+                            amet possimus quis, veritatis suscipit tempore,
+                            fugit at cumque ea laudantium et praesentium nostrum
+                            placeat magni ipsa libero ullam id nulla minus
+                            eveniet voluptatum velit. Quibusdam totam
+                            consectetur consequuntur hic voluptatem voluptatum
+                            debitis quasi explicabo quae delectus!
+                        </p>
                     </div>
                     <div class="projects__table--interest">
-                        <ion-icon class="projects__table--icons" name="shapes"></ion-icon>
-                        <h3 class="projects__table--name heading heading-3">Design</h3>
-                        <p class="projects__table--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque, perspiciatis amet quam eius optio perferendis expedita molestiae ea labore temporibus corporis ducimus harum dolore dolorem iste voluptatibus similique recusandae?</p>
+                        <ion-icon
+                            class="projects__table--icons"
+                            name="shapes"
+                        ></ion-icon>
+                        <h3 class="projects__table--name heading heading-3">
+                            Design
+                        </h3>
+                        <p class="projects__table--text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Deserunt doloremque, perspiciatis amet quam
+                            eius optio perferendis expedita molestiae ea labore
+                            temporibus corporis ducimus harum dolore dolorem
+                            iste voluptatibus similique recusandae?
+                        </p>
                     </div>
                     <div class="projects__table--interest">
-                        <ion-icon class="projects__table--icons" name="game-controller"></ion-icon>
-                        <h3 class="projects__table--name heading heading-3">Gaming</h3>
-                        <p class="projects__table--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque, perspiciatis amet quam eius optio perferendis expedita molestiae ea labore temporibus corporis ducimus harum dolore dolorem iste voluptatibus similique recusandae?</p>
+                        <ion-icon
+                            class="projects__table--icons"
+                            name="game-controller"
+                        ></ion-icon>
+                        <h3 class="projects__table--name heading heading-3">
+                            Gaming
+                        </h3>
+                        <p class="projects__table--text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Deserunt doloremque, perspiciatis amet quam
+                            eius optio perferendis expedita molestiae ea labore
+                            temporibus corporis ducimus harum dolore dolorem
+                            iste voluptatibus similique recusandae?
+                        </p>
                     </div>
                 </div>
             </section>
@@ -118,112 +225,294 @@
                 <div class="breaking-line"></div>
 
                 <div class="showcase__photography">
+                    <figure class="gallery__item gallery__item--1">
+                        <img
+                            src="img/gallery-1.jpg"
+                            alt="Gallery img 1"
+                            class="gallery__img"
+                        />
+                    </figure>
 
-                    <figure class="gallery__item gallery__item--1"><img src="img/gallery-1.jpg" alt="Gallery img 1" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--2"><img src="img/gallery-2.jpg" alt="Gallery img 2" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--3"><img src="img/gallery-3.jpg" alt="Gallery img 3" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--4"><img src="img/gallery-4.jpg" alt="Gallery img 4" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--5"><img src="img/gallery-5.jpg" alt="Gallery img 5" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--6"><img src="img/gallery-6.jpg" alt="Gallery img 6" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--7"><img src="img/gallery-7.jpg" alt="Gallery img 7" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--8"><img src="img/gallery-8.jpg" alt="Gallery img 8" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--9"><img src="img/gallery-9.jpg" alt="Gallery img 9" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--10"><img src="img/gallery-10.jpg" alt="Gallery img 10" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--11"><img src="img/gallery-11.jpg" alt="Gallery img 11" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--12"><img src="img/gallery-12.jpg" alt="Gallery img 12" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--13"><img src="img/gallery-13.jpg" alt="Gallery img 13" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--14"><img src="img/gallery-14.jpg" alt="Gallery img 14" class="gallery__img"></figure>
-                                        
-                    <figure class="gallery__item gallery__item--16"><img src="img/gallery-16.jpg" alt="Gallery img 16" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--17"><img src="img/gallery-17.jpg" alt="Gallery img 17" class="gallery__img"></figure>
-                                        
-                    <figure class="gallery__item gallery__item--19"><img src="img/gallery-19.jpg" alt="Gallery img 19" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--20"><img src="img/gallery-20.jpg" alt="Gallery img 20" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--21"><img src="img/gallery-21.jpg" alt="Gallery img 21" class="gallery__img"></figure>
-                    
-                    <figure class="gallery__item gallery__item--22"><img src="img/gallery-22.jpg" alt="Gallery img 22" class="gallery__img"></figure>
+                    <figure class="gallery__item gallery__item--2">
+                        <img
+                            src="img/gallery-2.jpg"
+                            alt="Gallery img 2"
+                            class="gallery__img"
+                        />
+                    </figure>
 
-                    <figure class="gallery__item gallery__item--23"><img src="img/gallery-23.jpg" alt="Gallery img 22" class="gallery__img"></figure>
+                    <figure class="gallery__item gallery__item--3">
+                        <img
+                            src="img/gallery-3.jpg"
+                            alt="Gallery img 3"
+                            class="gallery__img"
+                        />
+                    </figure>
 
-                    <figure class="gallery__item gallery__item--24"><img src="img/gallery-24.jpg" alt="Gallery img 22" class="gallery__img"></figure>
+                    <figure class="gallery__item gallery__item--4">
+                        <img
+                            src="img/gallery-4.jpg"
+                            alt="Gallery img 4"
+                            class="gallery__img"
+                        />
+                    </figure>
 
-                    <figure class="gallery__item gallery__item--25"><img src="img/gallery-25.jpg" alt="Gallery img 22" class="gallery__img"></figure>
+                    <figure class="gallery__item gallery__item--5">
+                        <img
+                            src="img/gallery-5.jpg"
+                            alt="Gallery img 5"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--6">
+                        <img
+                            src="img/gallery-6.jpg"
+                            alt="Gallery img 6"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--7">
+                        <img
+                            src="img/gallery-7.jpg"
+                            alt="Gallery img 7"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--8">
+                        <img
+                            src="img/gallery-8.jpg"
+                            alt="Gallery img 8"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--9">
+                        <img
+                            src="img/gallery-9.jpg"
+                            alt="Gallery img 9"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--10">
+                        <img
+                            src="img/gallery-10.jpg"
+                            alt="Gallery img 10"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--11">
+                        <img
+                            src="img/gallery-11.jpg"
+                            alt="Gallery img 11"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--12">
+                        <img
+                            src="img/gallery-12.jpg"
+                            alt="Gallery img 12"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--13">
+                        <img
+                            src="img/gallery-13.jpg"
+                            alt="Gallery img 13"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--14">
+                        <img
+                            src="img/gallery-14.jpg"
+                            alt="Gallery img 14"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--16">
+                        <img
+                            src="img/gallery-16.jpg"
+                            alt="Gallery img 16"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--17">
+                        <img
+                            src="img/gallery-17.jpg"
+                            alt="Gallery img 17"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--19">
+                        <img
+                            src="img/gallery-19.jpg"
+                            alt="Gallery img 19"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--20">
+                        <img
+                            src="img/gallery-20.jpg"
+                            alt="Gallery img 20"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--21">
+                        <img
+                            src="img/gallery-21.jpg"
+                            alt="Gallery img 21"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--22">
+                        <img
+                            src="img/gallery-22.jpg"
+                            alt="Gallery img 22"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--23">
+                        <img
+                            src="img/gallery-23.jpg"
+                            alt="Gallery img 22"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--24">
+                        <img
+                            src="img/gallery-24.jpg"
+                            alt="Gallery img 22"
+                            class="gallery__img"
+                        />
+                    </figure>
+
+                    <figure class="gallery__item gallery__item--25">
+                        <img
+                            src="img/gallery-25.jpg"
+                            alt="Gallery img 22"
+                            class="gallery__img"
+                        />
+                    </figure>
                 </div>
 
-                
-                <h3 class="heading heading-3 showcase__title">Web development</h3>
-               
+                <h3 class="heading heading-3 showcase__title">
+                    Web development
+                </h3>
+
                 <div class="showcase__webdev">
                     <div class="card">
-                        <img src="/img/omnifood.jpg" alt="" class="card__img">
+                        <img src="/img/omnifood.jpg" alt="" class="card__img" />
                         <div class="card__pages">
-                            <a href="https://github.com/nataliabanz/omnifood"  target=”_blank” class="btn btn-link">GitHub</a>
+                            <a
+                                href="https://github.com/nataliabanz/omnifood"
+                                target="”_blank”"
+                                class="btn btn-link"
+                                >GitHub</a
+                            >
                             <a href="#" class="btn btn-link">Preview</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/img/trillo.jpg" alt="" class="card__img">
+                        <img src="/img/trillo.jpg" alt="" class="card__img" />
                         <div class="card__pages">
-                            <a href="https://github.com/nataliabanz/trillo"  target=”_blank” class="btn btn-link">GitHub</a>
+                            <a
+                                href="https://github.com/nataliabanz/trillo"
+                                target="”_blank”"
+                                class="btn btn-link"
+                                >GitHub</a
+                            >
                             <a href="#" class="btn btn-link">Preview</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/img/natours.jpg" alt="" class="card__img">
+                        <img src="/img/natours.jpg" alt="" class="card__img" />
                         <div class="card__pages">
-                            <a href="https://github.com/nataliabanz/natours"  target=”_blank” class="btn btn-link">GitHub</a>
+                            <a
+                                href="https://github.com/nataliabanz/natours"
+                                target="”_blank”"
+                                class="btn btn-link"
+                                >GitHub</a
+                            >
                             <a href="#" class="btn btn-link">Preview</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/img/nexter.jpg" alt="" class="card__img">
+                        <img src="/img/nexter.jpg" alt="" class="card__img" />
                         <div class="card__pages">
-                            <a href="https://github.com/nataliabanz/nexter"  target=”_blank” class="btn btn-link">GitHub</a>
+                            <a
+                                href="https://github.com/nataliabanz/nexter"
+                                target="”_blank”"
+                                class="btn btn-link"
+                                >GitHub</a
+                            >
                             <a href="#" class="btn btn-link">Preview</a>
                         </div>
                     </div>
                 </div>
-              
+
                 <h3 class="heading heading-3 showcase__title">Design</h3>
-                
+
                 <div class="showcase__design">
-                    <img src="/img/design-3.jpg" alt="Photo 3" class="showcase__design--img showcase__design--3">
-                           
-                    <img src="/img/design-4.jpg" alt="Photo 4" class="showcase__design--img showcase__design--4">
-                        
-                    <img src="/img/design-5.jpg" alt="Photo 5" class="showcase__design--img showcase__design--5">
-                                       
-                    <img src="/img/design-6.jpg" alt="Photo 6" class="showcase__design--img showcase__design--6">
-                       
-                    <img src="/img/design-1.jpg" alt="Photo1" class="showcase__design--img showcase__design--1">
-    
-                    <img src="/img/design-2.jpg" alt="Photo2" class="showcase__design--img showcase__design--2">
-    
-                    <img src="/img/design-7.jpg" alt="Photo7" class="showcase__design--img showcase__design--7">  
+                    <div class="showcase__design--first">
+                        <img
+                            src="/img/design-3.jpg"
+                            alt="wedding invitation version 1"
+                            class="showcase__design--img showcase__design--3"
+                        />
 
-                    <img src="/img/design-8.jpg" alt="Photo8" class="showcase__design--img showcase__design--8"> 
+                        <img
+                            src="/img/design-4.jpg"
+                            alt="wedding invitation version 2"
+                            class="showcase__design--img showcase__design--4"
+                        />
 
-                    <img src="/img/design-9.jpg" alt="Photo9" class="showcase__design--img showcase__design--9"> 
+                        <img
+                            src="/img/design-5.jpg"
+                            alt="wedding invitation version 3"
+                            class="showcase__design--img showcase__design--5"
+                        />
 
-                    <img src="/img/design-10.jpg" alt="Photo10" class="showcase__design--img showcase__design--10">  
+                        <img
+                            src="/img/design-6.jpg"
+                            alt="wedding invitation version 4"
+                            class="showcase__design--img showcase__design--6"
+                        />
+                    </div>
 
-                    <img src="/img/design-11.jpg" alt="Photo11" class="showcase__design--img showcase__design--11"> 
+                    <div class="showcase__design--second">
+                        <img
+                            src="/img/design-1.jpg"
+                            alt="Wedding viniet female"
+                            class="showcase__design--img showcase__design--1"
+                        />
+
+                        <img
+                            src="/img/design-2.jpg"
+                            alt="Wedding viniet male"
+                            class="showcase__design--img showcase__design--2"
+                        />
+
+                        <img
+                            src="/img/design-7.jpg"
+                            alt="wedding conformation"
+                            class="showcase__design--img showcase__design--7"
+                        />
+                    </div>
                 </div>
             </section>
 
@@ -234,56 +523,165 @@
                     <ul class="timeline__list">
                         <li class="timeline__list--item">
                             <div class="timeline__list--box">
-                                <h3 class="heading heading-3 timeline__heading"><span class="timeline__span">2007-2012</span> Medical University of Białystok, Poland</h3>
-                                <p class="timeline__text"><ion-icon class="timeline__icon" name="caret-forward-sharp"></ion-icon>Faculty of Pharmacy on direction: Laboratory Medicine, master degree.</p>
-                            </div>
-                        </li>
-                        <li class="timeline__list--item">
-                            <div class="timeline__list--box">
-                                <h3 class="heading heading-3 timeline__heading"><span class="timeline__span">2012-2015</span> Cracow, Poland</h3>
+                                <h3 class="heading heading-3 timeline__heading">
+                                    <span class="timeline__span"
+                                        >2007-2012</span
+                                    >
+                                    Medical University of Białystok, Poland
+                                </h3>
                                 <p class="timeline__text">
-                                <ion-icon class="timeline__icon" name="caret-forward-sharp"></ion-icon>Brothers Hospitallers Hospital in Kraków, Poland</p>
-                                <p><ion-icon class="timeline__icon"                         name="caret-forward-sharp"></ion-icon>Regional Center of Blood Donation and Hemotherapy</p>   
+                                    <ion-icon
+                                        class="timeline__icon"
+                                        name="caret-forward-sharp"
+                                    ></ion-icon
+                                    >Faculty of Pharmacy on direction:
+                                    Laboratory Medicine, master degree.
+                                </p>
                             </div>
                         </li>
                         <li class="timeline__list--item">
                             <div class="timeline__list--box">
-                                <h3 class="heading heading-3 timeline__heading"><span class="timeline__span">2016-2019</span> Specialization in Laboratory Medical Transfusion Medicine</h3>
+                                <h3 class="heading heading-3 timeline__heading">
+                                    <span class="timeline__span"
+                                        >2012-2015</span
+                                    >
+                                    Krakow, Poland
+                                </h3>
                                 <p class="timeline__text">
-                                <ion-icon class="timeline__icon" name="caret-forward-sharp"></ion-icon>Specialist degree</p>
-                                
-                            </div>
-                        </li>
-                        <li class="timeline__list--item">
-                            <div class="timeline__list--box">
-                                <h3 class="heading heading-3 timeline__heading"><span class="timeline__span">2016-2019</span> Poznan, Poland</h3>
-                                <p><ion-icon class="timeline__icon"                         name="caret-forward-sharp"></ion-icon>Regional Center of Blood Donation and Hemotherapy</p>   
-                            </div>
-                        </li>
-                        <li class="timeline__list--item">
-                            <div class="timeline__list--box">
-                                <h3 class="heading heading-3 timeline__heading"><span class="timeline__span">March 2020</span> Berlin, Germany</h3>
+                                    <ion-icon
+                                        class="timeline__icon"
+                                        name="caret-forward-sharp"
+                                    ></ion-icon
+                                    >Brothers Hospitallers Hospital in Kraków,
+                                    Poland
+                                </p>
                                 <p class="timeline__text">
-                                <ion-icon class="timeline__icon" name="caret-forward-sharp"></ion-icon>Self-learning HTML and CSS with <a href="https://udemy.com/"> &nbspUdemy</a> and self projects</p>
-                                <img src="/img/certificat2.png" alt="Certificate 2" class="certificat">    
-                                <img src="/img/certificat1.png" alt="Certificate 1" class="certificat">    
-                                <img src="/img/certificat3.png" alt="Certificate 3" class="certificat">    
+                                    <ion-icon
+                                        class="timeline__icon"
+                                        name="caret-forward-sharp"
+                                    ></ion-icon
+                                    >Regional Center of Blood Donation and
+                                    Hemotherapy
+                                </p>
                             </div>
                         </li>
                         <li class="timeline__list--item">
                             <div class="timeline__list--box">
-                                <h3 class="heading heading-3 timeline__heading"><span class="timeline__span">December 2020</span></h3>
+                                <h3 class="heading heading-3 timeline__heading">
+                                    <span class="timeline__span"
+                                        >2016-2019</span
+                                    >
+                                    Specialization in Laboratory Medical
+                                    Transfusion Medicine
+                                </h3>
                                 <p class="timeline__text">
-                                <ion-icon class="timeline__icon" name="caret-forward-sharp"></ion-icon>Starting Bootcamp "Foundation of Programming" on <a href="https://studiuje.it/"> &nbspStudiuje.it</a></p>  
-                                <p><ion-icon class="timeline__icon" name="caret-forward-sharp"></ion-icon>Self-learning JavaScript with <a href="https://udemy.com/">Udemy</a>
-                                </p> 
+                                    <ion-icon
+                                        class="timeline__icon"
+                                        name="caret-forward-sharp"
+                                    ></ion-icon
+                                    >Specialist degree
+                                </p>
                             </div>
                         </li>
                         <li class="timeline__list--item">
                             <div class="timeline__list--box">
-                                <h3 class="heading heading-3 timeline__heading"><span class="timeline__span">January 2021</span></h3>
+                                <h3 class="heading heading-3 timeline__heading">
+                                    <span class="timeline__span"
+                                        >2016-2019</span
+                                    >
+                                    Poznan, Poland
+                                </h3>
                                 <p class="timeline__text">
-                                <ion-icon class="timeline__icon" name="caret-forward-sharp"></ion-icon>Starting course on  <a href="https://digitalcareerinstitute.org/"> &nbspThe Digital Career Institute</a> - Web development</p>   
+                                    <ion-icon
+                                        class="timeline__icon"
+                                        name="caret-forward-sharp"
+                                    ></ion-icon
+                                    >Regional Center of Blood Donation and
+                                    Hemotherapy
+                                </p>
+                            </div>
+                        </li>
+                        <li class="timeline__list--item">
+                            <div class="timeline__list--box">
+                                <h3 class="heading heading-3 timeline__heading">
+                                    <span class="timeline__span"
+                                        >March 2020</span
+                                    >
+                                    Berlin, Germany
+                                </h3>
+                                <p class="timeline__text">
+                                    <ion-icon
+                                        class="timeline__icon"
+                                        name="caret-forward-sharp"
+                                    ></ion-icon
+                                    >Self-taught HTML and CSS with
+                                    <a href="https://udemy.com/"> &nbspUdemy</a>
+                                    and self projects
+                                </p>
+                                <img
+                                    src="/img/certificat2.png"
+                                    alt="Certificate 2"
+                                    class="certificat"
+                                />
+                                <img
+                                    src="/img/certificat1.png"
+                                    alt="Certificate 1"
+                                    class="certificat"
+                                />
+                                <img
+                                    src="/img/certificat3.png"
+                                    alt="Certificate 3"
+                                    class="certificat"
+                                />
+                            </div>
+                        </li>
+                        <li class="timeline__list--item">
+                            <div class="timeline__list--box">
+                                <h3 class="heading heading-3 timeline__heading">
+                                    <span class="timeline__span"
+                                        >December 2020</span
+                                    >
+                                </h3>
+                                <p class="timeline__text">
+                                    <ion-icon
+                                        class="timeline__icon"
+                                        name="caret-forward-sharp"
+                                    ></ion-icon
+                                    >Starting Bootcamp "Foundation of
+                                    Programming" on
+                                    <a href="https://studiuje.it/">
+                                        &nbspStudiuje.it</a
+                                    >
+                                </p>
+                                <p class="timeline__text">
+                                    <ion-icon
+                                        class="timeline__icon"
+                                        name="caret-forward-sharp"
+                                    ></ion-icon
+                                    >Self-taught JavaScript with
+                                    <a href="https://udemy.com/">&nbspUdemy</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="timeline__list--item">
+                            <div class="timeline__list--box">
+                                <h3 class="heading heading-3 timeline__heading">
+                                    <span class="timeline__span"
+                                        >January 2021</span
+                                    >
+                                </h3>
+                                <p class="timeline__text">
+                                    <ion-icon
+                                        class="timeline__icon"
+                                        name="caret-forward-sharp"
+                                    ></ion-icon
+                                    ><a
+                                        href="https://digitalcareerinstitute.org/"
+                                    >
+                                        &nbspThe Digital Career Institute</a
+                                    >
+                                    - Web development
+                                </p>
                             </div>
                         </li>
                     </ul>
@@ -291,68 +689,132 @@
             </section>
 
             <section class="contact">
-            <div class="contact__pic">
-                <form action="#" class="form">
-                    <div>
-                        <h3 class="heading heading-3 form__title">Contact me</h3>
-                    </div>
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Full Name" id="Name" required>
-                        <label for="Name" class="form__label">Full Name</label>
-                    </div>    
-                    <div class="form__group">
-                        <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                        <label for="email" class="form__label">Email Adress</label>
-                    </div>  
-                    <div class="form__group">
-                        <div class="form__radio--group">
-                            <input type="radio" class="form__radio--input" id="female" name="tour">
-                            <label for="female" class="form__radio--label">
-                                <span class="form__radio--button"></span>
-                                Female</label>
-                        </div> 
-                        <div class="form__radio--group">
-                            <input type="radio" class="form__radio--input" id="male" name="tour">
-                            <label for="male" class="form__radio--label">
-                                <span class="form__radio--button"></span>
-                                Male</label>
-                        </div> 
-                        <div class="form__radio--group">
-                            <input type="radio" class="form__radio--input" id="notsay" name="tour">
-                            <label for="notsay" class="form__radio--label">
-                                <span class="form__radio--button"></span>
-                                Rather not say</label>
-                        </div> 
-                    </div> 
-                    <div class="form__group">
-                        <textarea name="message" id="message" class="form__area" placeholder="Write us your message"></textarea>
-                        <label for="message" class="form__label--mess">Write your message</label>
-                    </div> 
-                    <div class="form__group">
-                        <button class="btn">Send it &rarr;</button>
-                    </div> 
-                </form>
-            </div>
-        </section>
+                <div class="contact__pic">
+                    <form action="#" class="form">
+                        <div>
+                            <h3 class="heading heading-3 form__title">
+                                Contact me
+                            </h3>
+                        </div>
+                        <div class="form__group">
+                            <input
+                                type="text"
+                                class="form__input"
+                                placeholder="Full Name"
+                                id="Name"
+                                required
+                            />
+                            <label for="Name" class="form__label"
+                                >Full Name</label
+                            >
+                        </div>
+                        <div class="form__group">
+                            <input
+                                type="email"
+                                class="form__input"
+                                placeholder="Email address"
+                                id="email"
+                                required
+                            />
+                            <label for="email" class="form__label"
+                                >Email Adress</label
+                            >
+                        </div>
+                        <div class="form__group">
+                            <div class="form__radio--group">
+                                <input
+                                    type="radio"
+                                    class="form__radio--input"
+                                    id="female"
+                                    name="tour"
+                                />
+                                <label for="female" class="form__radio--label">
+                                    <span class="form__radio--button"></span>
+                                    Female</label
+                                >
+                            </div>
+                            <div class="form__radio--group">
+                                <input
+                                    type="radio"
+                                    class="form__radio--input"
+                                    id="male"
+                                    name="tour"
+                                />
+                                <label for="male" class="form__radio--label">
+                                    <span class="form__radio--button"></span>
+                                    Male</label
+                                >
+                            </div>
+                            <div class="form__radio--group">
+                                <input
+                                    type="radio"
+                                    class="form__radio--input"
+                                    id="notsay"
+                                    name="tour"
+                                />
+                                <label for="notsay" class="form__radio--label">
+                                    <span class="form__radio--button"></span>
+                                    Rather not say</label
+                                >
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <textarea
+                                name="message"
+                                id="message"
+                                class="form__area"
+                                placeholder="Write us your message"
+                            ></textarea>
+                            <label for="message" class="form__label--mess"
+                                >Write your message</label
+                            >
+                        </div>
+                        <div class="form__group">
+                            <button class="btn">Send it &rarr;</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
             <section class="footer">
                 <ul class="footer__nav">
-                    <a href="#" class="footer__nav--item1 footer__link">Start</a>
-                
-                    <a href="#" class="footer__nav--item2 footer__link"">About Me</a>
-               
-                    <a href="#" class="footer__nav--item3 footer__link"">Projects</a>
-              
-                    <a href="#" class="footer__nav--item4 footer__link"">Blog</a> 
+                    <li class="footer__nav--item">
+                        <h4>
+                            <a href="#" class="footer__nav--item1 footer__link"
+                                >Start</a
+                            >
+                        </h4>
+                    </li>
+                    <li class="footer__nav--item">
+                        <h4>
+                            <a href="#" class="footer__nav--item2 footer__link"
+                                >About Me</a
+                            >
+                        </h4>
+                    </li>
+                    <li class="footer__nav--item">
+                        <h4>
+                            <a href="#" class="footer__nav--item3 footer__link"
+                                >Projects</a
+                            >
+                        </h4>
+                    </li>
+                    <li class="footer__nav--item">
+                        <h4>
+                            <a href="#" class="footer__nav--item4 footer__link"
+                                >Blog</a
+                            >
+                        </h4>
+                    </li>
                 </ul>
                 <div class="footer__copy">
                     Copyrights &copy; by Natalia Banz - Aps on the Mission!
                 </div>
             </section>
-        </div>       
-        
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>   
-        <script src="js/typewriter.js"></script>   
-        <script src="js/main.js"></script>   
+        </div>
+
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <script src="js/typewriter.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

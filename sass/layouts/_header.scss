@@ -1,80 +1,61 @@
 .header {
     grid-column: full-start / full-end;
-    background-image: linear-gradient(to right bottom, (rgba($color-primary-light, .5)),(transparent)),
-    url(../img/showcase.jpg);
+    background-image: linear-gradient(
+            to bottom,
+            (rgba($color-primary, 0.7)),
+            (rgba($color-primary, 0.3))
+        ),
+        url(../img/hero2.jpg);
     width: 100%;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-
+    background-position: center;
     display: grid;
-    grid-template-columns: minmax(20rem, max-content) 1fr;
-
-    &__background {
-        grid-column: 1;
-        background-image: linear-gradient(to right, (rgba($color-primary-light, .7)), (transparent));
-        box-shadow: 1rem 0rem 2rem rgba($color-black, .2);
-
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-        justify-items: center;
-        align-items: center;
-    }
-
-    &__content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-        grid-column-gap: 1rem;
-        justify-self: stretch;  
-    }
+    grid-template-columns: 1fr minmax(35rem, max-content);
 
     &__nav {
-        display: grid;
-        margin: 2rem 0;     
-        padding: 0 4rem;  
-        
+        grid-column: 2;
+        width: 100%;
+        background-color: rgba($color-primary-light, 0.3);
+        box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
+
         &--items {
             list-style: none;
-            font-size: 2.5rem;
-            letter-spacing: .5rem;
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 1rem;
+            margin: 1.5rem 2rem;
             border-radius: 5px;
-            background-color: rgba($color: $color-white, $alpha: .1);
-            box-shadow: 0rem .5rem 2rem rgba($color-black, .2);
+            background-color: rgba($color-white, 0.3);
+            box-shadow: 0rem 0.2rem 0.5rem rgba($color-black, 0.5);
         }
 
         &--link {
             display: flex;
             justify-content: center;
             align-items: center;
-            
             text-decoration: none;
-            padding: .5rem;
             color: $color-secondary;
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+            text-align: center;
             font-size: 3rem;
             font-weight: 700;
-            border-bottom: 2px transparent solid; 
+            border-bottom: 2px transparent solid;
             border-top: none;
             transition: border-color 0.5s;
 
-            &:hover {
-                cursor: pointer;
-                background-color: rgba($color-primary, $alpha: .3);
-                color: $color-primary-dark;
-                border-radius: 5px;
-                border-color: $color-secondary;
-            }
-
+            &:hover,
             &.current {
-                background-color: rgba($color-primary, $alpha: .3);
-                color: $color-primary-dark; 
+                cursor: pointer;
+                background-color: $color-secondary-dark;
+                color: $color-primary-light;
+                border-radius: 5px;
+                border-color: $color-secondary-light;
             }
         }
 
         &--icon {
             margin-right: 2rem;
-            color: $color-primary-dark ;
+            color: $color-primary-dark;
         }
     }
 
@@ -85,21 +66,23 @@
 
         &--user {
             width: 16rem;
+            height: 16rem;
             border: 2px $color-secondary solid;
             border-radius: 100px;
-            margin-top: 1.5rem; 
+            margin: 1.5rem 0;
         }
         &--text {
-            margin: 0 4rem;
-            font-size: 1.8rem;
+            width: 100%;
+            padding: 1rem 0;
+            font-weight: 700;
+            background-color: $color-primary-light;
+            box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
         }
     }
-    
+
     &__span {
-        color: $color-secondary;
-        font-size: 3rem;
-        letter-spacing: .4rem;
-        margin-bottom: 1rem;
+        letter-spacing: 0.4rem;
+        color: $color-secondary-light;
 
         &--js {
             color: $color-secondary;
@@ -108,4 +91,29 @@
     }
 }
 
+@media screen and (max-width: $bp-desktop) {
+    .header__info {
+        &--user {
+            width: 12rem;
+            height: 12rem;
+        }
+    }
 
+    .header__nav {
+        &--link {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-large) {
+    .header__nav {
+        &--items {
+            margin: 1.3rem 2rem;
+        }
+
+        &--link {
+            font-size: 2.5rem;
+        }
+    }
+}

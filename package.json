@@ -1,5 +1,5 @@
 {
-  "name": "NataliaBanz",
+  "name": "nataliabanz",
   "version": "1.0.0",
   "description": "private website",
   "main": "index.js",
@@ -16,10 +16,22 @@
   "author": "Aps",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.8.5",
+    "autoprefixer": "^9.8.6",
     "concat": "^1.0.3",
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataliabanz/fraubanz.git"
+  },
+  "keywords": [
+    "personal",
+    "webdev"
+  ],
+  "bugs": {
+    "url": "https://github.com/nataliabanz/fraubanz/issues"
+  },
+  "homepage": "https://github.com/nataliabanz/fraubanz#readme"
 }

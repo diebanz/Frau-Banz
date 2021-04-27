@@ -1,24 +1,25 @@
 body {
-    font-family: 'Poiret One', 'Lora';
+    font-family: "Poiret One", "Lora";
     font-weight: 400;
     line-height: 1.7;
-    color: $color-grey-dark-3; 
+    color: $color-grey-dark-3;
 }
 
 .heading {
     font-family: $default-font;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
 
     &-1 {
-        font-size: 6.5rem;
+        font-size: 5.5rem;
         color: $color-primary-dark;
+        margin: 8rem 0;
     }
 
     &-2 {
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         color: $color-secondary-dark;
     }
 
@@ -38,6 +39,18 @@ p {
     font-family: $second-font;
     font-size: 1.6rem;
     line-height: 2;
-    text-align: justify;
 }
 
+@media screen and (max-width: $bp-desktop) {
+    .heading-1 {
+        margin: 4rem 0;
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: $bp-large) {
+    .heading-1 {
+        margin: 4rem 0;
+        font-size: 5rem;
+    }
+}

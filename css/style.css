@@ -386,12 +386,14 @@ a {
     background-repeat: no-repeat; }
   .about__right {
     padding: 10rem;
-    background-color: #50a3ae; }
+    background-color: #2d4a61; }
     .about__right--heading {
-      margin-bottom: 8rem; }
+      margin-bottom: 8rem;
+      color: #ecc7d2; }
     .about__right--text {
       text-indent: 3rem;
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      color: #f4f4f4; }
 
 @media screen and (max-width: 1800px) {
   .about__right {
@@ -417,20 +419,20 @@ a {
 
 .contact {
   grid-column: full-start / full-end;
-  padding: 5rem 0;
-  margin-bottom: 15rem; }
+  padding: 5rem 0; }
   .contact__pic {
     width: 80%;
-    background-image: linear-gradient(105deg, rgba(238, 238, 238, 0.7) 0%, rgba(238, 238, 238, 0.7) 50%, rgba(255, 255, 255, 0.3) 50%), url("/img/nat-4.jpg");
+    background-image: linear-gradient(105deg, rgba(238, 238, 238, 0.7) 0%, rgba(238, 238, 238, 0.7) 60%, rgba(255, 255, 255, 0.3) 50%), url("/img/nat-4.jpg");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0 auto;
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
     border-radius: 5px; }
 
 .form {
-  width: 50%;
-  padding: 6rem;
+  width: 60%;
+  padding: 4rem;
   color: #2d4a61;
   font-size: 2rem;
   font-weight: 700; }
@@ -438,17 +440,20 @@ a {
     margin-bottom: 5rem; }
   .form__area {
     width: 90%;
-    height: 15rem;
-    display: block; }
+    height: 20rem;
+    padding: 0.5rem;
+    display: block;
+    font-family: inherit;
+    resize: none; }
     .form__area:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
   .form__group:not(:last-child) {
     margin-bottom: 5rem; }
   .form__input {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: inherit;
-    color: inherit;
+    color: #750c31;
     padding: 1.5rem 2rem;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -457,29 +462,29 @@ a {
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
-    transition: all .3s; }
+    transition: all 0.3s; }
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
       border-bottom: 3px solid #50a3ae; }
     .form__input:invalid {
       border-bottom: 3px solid #750c31; }
-    .form__input::-webkit-input-placeholder {
+    .form__input::placeholder {
       color: #333; }
   .form__label {
     color: .form__label color-primary-dark;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-left: 2rem;
-    margin-top: .7rem;
+    margin-top: 0.7rem;
     display: block;
     transform: translateY(0);
-    transition: all .3s; }
+    transition: all 0.3s; }
     .form__label--mess {
       font-size: 1.8rem;
       color: #2d4a61;
       transform: translateY(0);
-      transition: all .3s; }
+      transition: all 0.3s; }
   .form__input:placeholder-shown + .form__label {
     opacity: 0;
     visibility: hidden;
@@ -494,10 +499,12 @@ a {
   .form__radio--input {
     display: none; }
   .form__radio--label {
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
     position: relative;
-    padding-left: 4.5rem; }
+    padding-left: 4.5rem;
+    text-transform: uppercase;
+    color: #750c31; }
   .form__radio--button {
     height: 3rem;
     width: 3rem;
@@ -508,7 +515,7 @@ a {
     left: 0;
     top: -0.4rem; }
     .form__radio--button::after {
-      content: '';
+      content: "";
       display: block;
       height: 1rem;
       width: 1rem;
@@ -519,9 +526,43 @@ a {
       transform: translate(-50%, -50%);
       background-color: #2d4a61;
       opacity: 0;
-      transition: opacity .2s; }
+      transition: opacity 0.2s; }
   .form__radio--input:checked ~ .form__radio--label .form__radio--button::after {
-    opacity: 1; }
+    opacity: 1;
+    background-color: #750c31; }
+
+@media screen and (max-width: 1200px) {
+  .contact__pic {
+    background-image: linear-gradient(105deg, rgba(238, 238, 238, 0.7) 0%, rgba(238, 238, 238, 0.7) 72%, rgba(255, 255, 255, 0.3) 50%), url("/img/nat-4.jpg"); }
+  .form {
+    width: 80%;
+    padding: 3rem;
+    font-size: 1.8rem; }
+    .form__title {
+      margin-bottom: 4rem; }
+    .form__input {
+      font-size: 1.8rem; } }
+
+@media screen and (max-width: 900px) {
+  .contact__pic {
+    background-image: linear-gradient(105deg, rgba(238, 238, 238, 0.7), rgba(255, 255, 255, 0.5)), url("/img/nat-4.jpg"); }
+  .form {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem; }
+    .form__title {
+      margin-bottom: 4rem; }
+    .form__input {
+      width: 100%;
+      font-size: 1.8rem; }
+    .form__group {
+      width: 100%;
+      text-align: center; }
+    .form__area {
+      width: 100%; }
+    .form__radio--group {
+      margin: 0 auto;
+      width: 49%; } }
 
 .projects {
   grid-column: full-start / full-end;
@@ -606,6 +647,8 @@ a {
     padding: 4rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    align-items: center;
+    justify-content: center;
     grid-gap: 4rem;
     margin: 6rem 0; }
   .showcase__title {

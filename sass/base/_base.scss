@@ -18,7 +18,7 @@ body {
 .container {
     max-width: 190rem;
 
-    background-color: $color-grey-light-2;
+    background-color: $color-gray-light-2;
     display: grid;
     grid-template-columns:
         [full-start] minmax(6rem, 1fr) [center-start]repeat(

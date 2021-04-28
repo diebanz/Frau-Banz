@@ -22,15 +22,17 @@
 
     &__right {
         padding: 10rem;
-        background-color: $color-primary;
+        background-color: $color-primary-dark;
 
         &--heading {
             margin-bottom: 8rem;
+            color: $color-secondary-light;
         }
 
         &--text {
             text-indent: 3rem;
             margin: 1rem 0;
+            color: $color-gray-light-3;
         }
     }
 }

@@ -60,10 +60,10 @@ p {
     font-size: 3.5rem; } }
 
 @media screen and (max-width: 600px) {
-  .heading_1 {
+  .heading-1 {
     font-size: 3.5rem; }
-  .heading_2 {
-    font-size: 2rem; }
+  .heading-2 {
+    font-size: 3rem; }
   p {
     font-size: 1.4rem; } }
 
@@ -421,10 +421,8 @@ a {
       width: 100%; } }
 
 @media screen and (max-width: 600px) {
-  .header__right {
-    padding: 1rem; }
-    .header__right--heading {
-      margin-bottom: 2rem; } }
+  .about__right {
+    padding: 1rem; } }
 
 .contact {
   grid-column: full-start / full-end;

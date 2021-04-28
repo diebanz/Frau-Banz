@@ -79,4 +79,11 @@
 }
 
 @media screen and (max-width: $bp-mobile) {
+    .header__right {
+        padding: 1rem;
+
+        &--heading {
+            margin-bottom: 2rem;
+        }
+    }
 }

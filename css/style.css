@@ -420,6 +420,12 @@ a {
     .about__left, .about__right {
       width: 100%; } }
 
+@media screen and (max-width: 600px) {
+  .header__right {
+    padding: 1rem; }
+    .header__right--heading {
+      margin-bottom: 2rem; } }
+
 .contact {
   grid-column: full-start / full-end;
   padding: 5rem 0; }

@@ -9,9 +9,6 @@ a {
     font-family: $default-font;
     text-decoration: none;
     color: $color-primary-light;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    font-weight: 700;
 
     &:hover {
         color: $color-secondary-dark;

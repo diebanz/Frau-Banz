@@ -6,17 +6,18 @@
 
 html {
     font-size: 62.5%;
-    line-height: 1.8;
 }
 
 body {
     box-sizing: border-box;
     font-size: 1.6rem;
+    line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 .container {
     max-width: 190rem;
-    margin: auto;
+
     background-color: $color-grey-light-2;
     display: grid;
     grid-template-columns:

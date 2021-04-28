@@ -1,22 +1,23 @@
 .btn {
     color: $color-white;
     font-family: $second-font;
-    font-size: 2rem;
-    padding: 2rem 5rem;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
     margin: 2rem 0;
     border: none;
-    background-color: rgba($color-secondary, .7);
+    background-color: rgba($color-secondary-dark, 0.7);
     border-radius: 100px;
     text-align: center;
-    box-shadow: 0 1rem 2rem rgba($color-primary-dark, .3);
-    transform: scale(1.05);
-    transition: all .2s;
+    box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.3);
+    transform: scale(1.02);
+    transition: all 0.2s;
     cursor: pointer;
     text-transform: uppercase;
 
     &:hover {
-        transform: scale(.95);
-        background-color: $color-primary;
-        color: $color-secondary;
+        font-weight: 700;
+        transform: scale(0.98);
+        background-color: $color-primary-light;
+        color: $color-secondary-dark;
     }
 }

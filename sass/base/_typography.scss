@@ -15,7 +15,8 @@ body {
     &-1 {
         font-size: 5.5rem;
         color: $color-primary-dark;
-        margin: 8rem 0;
+        margin: 6rem 0;
+        background-color: $color-primary-light;
     }
 
     &-2 {
@@ -38,19 +39,34 @@ body {
 p {
     font-family: $second-font;
     font-size: 1.6rem;
-    line-height: 2;
+    line-height: 1.7;
 }
 
-@media screen and (max-width: $bp-desktop) {
-    .heading-1 {
-        margin: 4rem 0;
+@media screen and (max-width: $bp-large) {
+    .heading_1 {
         font-size: 4.5rem;
     }
 }
 
-@media screen and (max-width: $bp-large) {
-    .heading-1 {
-        margin: 4rem 0;
-        font-size: 5rem;
+@media screen and (max-width: $bp-desktop) {
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .heading_2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
+    .heading_1 {
+        font-size: 3.5rem;
+    }
+
+    .heading_2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.4rem;
     }
 }

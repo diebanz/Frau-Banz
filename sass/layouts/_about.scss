@@ -1,28 +1,28 @@
 .about {
     grid-column: center-start / center-end;
-    margin: 7.5rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    &__left,
+    &__right {
+        width: 50%;
+        height: 60rem;
+        box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    }
 
     &__left {
-        width: 100%;
-        background-color: $color-primary;
-        border: 5px solid $color-primary;
-
-        & img {
-            display: block;
-            width: 70%;
-            margin: 0 auto;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
+        width: 25%;
+        background-image: url(../../img/autorbig.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &__right {
         padding: 10rem;
-        background-color: $color-grey-light-3;
-        border: 5px solid $color-primary;
+        background-color: $color-primary;
 
         &--heading {
             margin-bottom: 8rem;
@@ -33,4 +33,48 @@
             margin: 1rem 0;
         }
     }
+}
+
+@media screen and (max-width: $bp-large) {
+    .about {
+        &__right {
+            padding: 7rem;
+
+            &--heading {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-desktop) {
+    .about {
+        &__left {
+            width: 35%;
+        }
+
+        &__right {
+            padding: 4rem;
+
+            &--heading {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+
+        &__left,
+        &__right {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
 }

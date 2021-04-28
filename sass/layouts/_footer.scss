@@ -1,20 +1,19 @@
 .footer {
     grid-column: full-start / full-end;
     background-color: $color-grey-dark-3;
-    padding: 15rem 2rem;
-    border-top: 1px solid rgba($color-grey-light-3, .2);
+    padding: 8rem 0;
+    border-top: 1px solid rgba($color-grey-light-3, 0.2);
 
-    display: grid;
-    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
-    
+
     &__nav {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(min-content, 1fr));
-        grid-gap: 3rem;
+        display: flex;
+        flex-direction: column;
         justify-items: center;
-        align-items: flex-end;
+        align-items: center;
     }
 
     &__link {
@@ -22,7 +21,6 @@
         font-weight: 700;
         color: $color-primary-light;
         border-bottom: 2px solid transparent;
-       
 
         &:hover {
             color: $color-secondary-dark;
@@ -31,7 +29,8 @@
     }
 
     &__copy {
-        font-size: 3rem;    
+        margin-top: 2rem;
+        font-size: 2rem;
         color: $color-primary-light;
     }
 }

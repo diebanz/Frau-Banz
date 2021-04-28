@@ -32,7 +32,7 @@
     </head>
     <body>
         <div class="container">
-            <header class="header">
+            <header class="header" id="home">
                 <nav class="header__nav">
                     <div class="header__info">
                         <img
@@ -43,18 +43,18 @@
                         <h3 class="heading heading-3 header__info--text">
                             Natalia Banz
                         </h3>
+                        <h1 class="heading heading-1">
+                            Let's
+                            <span
+                                class="txt-type header__span--js"
+                                data-wait="3000"
+                                data-words='["discuss it", "picture it", "code it", "ENJOY IT"]'
+                            ></span>
+                        </h1>
                     </div>
-                    <h1 class="heading heading-1">
-                        Let's
-                        <span
-                            class="txt-type header__span--js"
-                            data-wait="3000"
-                            data-words='["discuss it", "picture it", "code it", "ENJOY IT"]'
-                        ></span>
-                    </h1>
                     <ul>
                         <li class="header__nav--items">
-                            <a class="header__nav--link current">
+                            <a href="#" class="header__nav--link current">
                                 <ion-icon
                                     class="header__nav--icon"
                                     name="home"
@@ -72,7 +72,7 @@
                             </a>
                         </li>
                         <li class="header__nav--items">
-                            <a href="#" class="header__nav--link">
+                            <a href="#about" class="header__nav--link">
                                 <ion-icon
                                     class="header__nav--icon"
                                     name="person-circle"
@@ -81,7 +81,7 @@
                             </a>
                         </li>
                         <li class="header__nav--items">
-                            <a href="#" class="header__nav--link">
+                            <a href="#project" class="header__nav--link">
                                 <ion-icon
                                     class="header__nav--icon"
                                     name="bulb"
@@ -90,7 +90,7 @@
                             </a>
                         </li>
                         <li class="header__nav--items">
-                            <a href="#" class="header__nav--link">
+                            <a href="#cv" class="header__nav--link">
                                 <ion-icon
                                     class="header__nav--icon"
                                     name="school"
@@ -99,7 +99,7 @@
                             </a>
                         </li>
                         <li class="header__nav--items">
-                            <a href="#" class="header__nav--link">
+                            <a href="#contact" class="header__nav--link">
                                 <ion-icon
                                     class="header__nav--icon"
                                     name="mail"
@@ -111,10 +111,8 @@
                 </nav>
             </header>
 
-            <section class="about">
-                <div class="about__left">
-                    <img src="./img/autorbig.jpg" alt="autor portret" />
-                </div>
+            <section class="about" id="about">
+                <div class="about__left"></div>
                 <div class="about__right">
                     <h2 class="about__right--heading heading heading-2">
                         Who am i?
@@ -133,16 +131,10 @@
                         totam dolorem? Placeat sunt quo libero dolor fuga? Sint
                         numquam ipsam sed exercitationem!
                     </p>
-                    <p class="about__right--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem eveniet libero voluptatum labore, voluptatibus
-                        aut sunt eaque odio laborum qui at maxime veritatis
-                        quia, soluta totam atque non? Voluptatum, amet.
-                    </p>
                 </div>
             </section>
 
-            <section class="projects">
+            <section class="projects" id="project">
                 <div class="projects__heading">
                     <h2 class="heading-2 heading">My Projects</h2>
                 </div>
@@ -516,7 +508,7 @@
                 </div>
             </section>
 
-            <section class="cv">
+            <section class="cv" id="cv">
                 <h2 class="cv__heading heading heading-2">Curriculum Vitae</h2>
 
                 <div class="timeline">
@@ -614,9 +606,11 @@
                                         class="timeline__icon"
                                         name="caret-forward-sharp"
                                     ></ion-icon
-                                    >Self-taught HTML and CSS with
-                                    <a href="https://udemy.com/"> &nbspUdemy</a>
-                                    and self projects
+                                    >Self-taught HTML and CSS, self projects -
+                                    &nbsp;
+                                    <a href="https://udemy.com/" target="_blank"
+                                        >Udemy</a
+                                    >&nbsp;
                                 </p>
                                 <img
                                     src="/img/certificat2.png"
@@ -648,18 +642,17 @@
                                         name="caret-forward-sharp"
                                     ></ion-icon
                                     >Starting Bootcamp "Foundation of
-                                    Programming" on
-                                    <a href="https://studiuje.it/">
-                                        &nbspStudiuje.it</a
-                                    >
+                                    Programming" on Studiuje.it
                                 </p>
                                 <p class="timeline__text">
                                     <ion-icon
                                         class="timeline__icon"
                                         name="caret-forward-sharp"
                                     ></ion-icon
-                                    >Self-taught JavaScript with
-                                    <a href="https://udemy.com/">&nbspUdemy</a>
+                                    >Self-taught JavaScript with &nbsp;
+                                    <a href="https://udemy.com/" target="_blank"
+                                        >Udemy</a
+                                    >
                                 </p>
                             </div>
                         </li>
@@ -677,10 +670,11 @@
                                     ></ion-icon
                                     ><a
                                         href="https://digitalcareerinstitute.org/"
+                                        target="_blank"
                                     >
-                                        &nbspThe Digital Career Institute</a
+                                        The Digital Career Institute</a
                                     >
-                                    - Web development
+                                    &nbsp;- Web development
                                 </p>
                             </div>
                         </li>
@@ -688,7 +682,7 @@
                 </div>
             </section>
 
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="contact__pic">
                     <form action="#" class="form">
                         <div>

@@ -61,9 +61,11 @@ p {
 
 @media screen and (max-width: 600px) {
   .heading-1 {
-    font-size: 3.5rem; }
+    font-size: 4rem; }
   .heading-2 {
     font-size: 3rem; }
+  .heading-3 {
+    font-size: 2rem; }
   p {
     font-size: 1.4rem; } }
 
@@ -655,8 +657,6 @@ a {
     padding: 4rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    align-items: center;
-    justify-content: center;
     grid-gap: 4rem;
     margin: 6rem 0; }
   .showcase__title {

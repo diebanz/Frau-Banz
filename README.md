@@ -16,3 +16,7 @@
 - add the blog site
 - ~make contact form fully working~
 - add some more JS content
+
+
+
+## BUILT YET NEWER VERSION -> [Preview](https://nataliabanz.netlify.app/) | [GitRepo](https://github.com/nataliabanz/FrauBanz-vol.2)
